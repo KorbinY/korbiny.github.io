@@ -2,7 +2,7 @@
 show: true
 width: 6
 date: 2025-07-20 00:00:00 +0000
-group: "Tutorials"
+group: "Presentation"
 ---
 
 <div class="p-3">
