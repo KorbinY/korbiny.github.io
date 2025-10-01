@@ -69,16 +69,19 @@ education:
 experience:
 - name: Amazon Inc
   logo: /assets/images/badges/Amazon-Logo-Transparent-PNG.png
+  logo_size: 25px
   position: Research Scientist Intern
   date: Aug. 2025 - Nov. 2025
 
 - name: TAL Education Group 
   logo: /assets/images/badges/TAL.png
+  logo_size: 25px
   position: Research Intern
   date: Jun. 2024 – Aug. 2024
 
 - name: The Hong Kong Polytechnic University
   logo: /assets/images/badges/hong-kong-polytechnic-university-logo.png
+  logo_size: 25px
   position: Research Intern, Department of Computing
   date: May. 2023 – Aug. 2023
 
