@@ -6,8 +6,10 @@ group: "Tutorials"
 ---
 
 <div class="p-3">
-  <p>Bringing Generative Artificial Intelligence (GenAI) to Education</p>
-  <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-primary">
-    Go to EDM 2025 Tutorial
-  </a>
+  <p>
+    Bringing Generative Artificial Intelligence (GenAI) to Education 
+    <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-primary ml-2">
+      Go to EDM 2025 Tutorial >>
+    </a>
+  </p>
 </div>
