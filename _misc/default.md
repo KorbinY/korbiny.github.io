@@ -1,11 +1,15 @@
 ---
 show: true
 width: 6
-date: 2025-01-01 00:00:00 +0800
-group: "Demo"
+date: 2025-07-20 00:00:00 +0800
+group: "Tutorial"
 ---
 
 <div class="p-3">
-<h4>Misc test card</h4>
-<p>This is a misc collection card.</p>
+  <h4>Tutorials</h4>
+  <p>
+    <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-primary">
+      Go to EDM2025 Tutorial
+    </a>
+  </p>
 </div>
