@@ -8,7 +8,7 @@ group: "Teaching"
 <div class="p-3">
   <p>
     CSE 482 Big Data Analysis (Spring 2025)
-    <a href="https://cse.msu.edu/~cse482/" class="btn btn-sm btn-primary ml-2 align-baseline">
+    <a href="https://web.archive.org/web/20250228132356/https://cse.msu.edu/~cse482/" class="btn btn-sm btn-primary ml-2 align-baseline">
       Go to Course Page &raquo;
     </a>
   </p>
