@@ -1,15 +1,13 @@
 ---
 show: true
 width: 6
-date: 2025-07-20 00:00:00 +0800
-group: "Tutorial"
+date: 2025-07-20 00:00:00 +0000
+group: "Tutorials"
 ---
 
 <div class="p-3">
-  <h4>Tutorials</h4>
-  <p>
-    <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-primary">
-      Go to EDM2025 Tutorial
-    </a>
-  </p>
+  <p>Bringing Generative Artificial Intelligence (GenAI) to Education</p>
+  <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-primary">
+    Go to EDM 2025 Tutorial
+  </a>
 </div>
