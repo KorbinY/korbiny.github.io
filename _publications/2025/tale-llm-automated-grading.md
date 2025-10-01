@@ -1,0 +1,15 @@
+---
+title: "LLM-based Automated Grading with Human-in-the-Loop"
+date: 2025-01-01
+pub: "IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)"
+pub_date: 2025
+authors:
+  - Hang Li*
+  - Yucheng Chu*
+  - Kaiqi Yang
+  - Yasemin Copur-Gencturk
+  - Jiliang Tang
+links:
+  Paper: https://arxiv.org/abs/2504.05239
+selected: false
+---
