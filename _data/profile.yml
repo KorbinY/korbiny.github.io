@@ -4,7 +4,7 @@ navbar_name: "Korbin"
 
 positions:
 # - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
-#   logo_size: 25px
+#   logo_size: 35px
   - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Candidate, Computer Science, Michigan State University</i>"
   - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'>Data Science and Engineering Lab</a></i>"
 
@@ -44,21 +44,21 @@ portrait_caption: >-
 education:
 - name: Michigan State University
   logo: /assets/images/badges/michigan-state-logo-png-transparent2.png
-  logo_size: 25px
+  logo_size: 35px
   position: Ph.D. Candidate
   dept: Department of Computer Science and Engineering
   date: Aug. 2022 – present
 
 - name: Fudan University
   logo: /assets/images/badges/sds-fudan-logo.png
-  logo_size: 25px
+  logo_size: 35px
   position: Master of Applied Statistics
   dept: School of Data Science
   date: Sep. 2019 – Jun. 2021
 
 - name: Fudan University
   logo: /assets/images/badges/ssdpp-fudan-logo.png
-  logo_size: 25px
+  logo_size: 35px
   position: Bachelor of Sociology
   dept: Department of Sociology
   date: Sep. 2015 – Jun. 2019
@@ -67,19 +67,19 @@ education:
 experience:
 - name: Amazon Inc
   logo: /assets/images/badges/Amazon-Logo-Transparent-PNG.png
-  logo_size: 25px
+  logo_size: 35px
   position: Research Scientist Intern
   date: Aug. 2025 - Nov. 2025
 
 - name: TAL Education Group 
   logo: /assets/images/badges/TAL.png
-  logo_size: 25px
+  logo_size: 35px
   position: Research Intern
   date: Jun. 2024 – Aug. 2024
 
 - name: The Hong Kong Polytechnic University
   logo: /assets/images/badges/hong-kong-polytechnic-university-logo.png
-  logo_size: 25px
+  logo_size: 35px
   position: Research Intern
   dept: Department of Computing
   date: May. 2023 – Aug. 2023
