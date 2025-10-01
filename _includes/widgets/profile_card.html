@@ -35,7 +35,7 @@
                                     <img src="{{ position.logo | relative_url }}"
                                         alt="Logo"
                                         class="inline-badge"
-                                        {% if position.logo_width %}style="width: {{ position.logo_width }};"{% endif %}/>
+                                        {% if position.logo_size %}style="width: {{ position.logo_size }}; height: {{ position.logo_size }};"{% endif %}/>
                                 {%- endif %}
                                 {{ position.name }}<br/>
                             {% endfor %}
