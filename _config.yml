@@ -17,6 +17,8 @@ timezone: America/Detroit
 
 # Collections
 collections:
-  - publications
-  - news
+  publications:
+    output: true
+  misc:
+    output: true
 
