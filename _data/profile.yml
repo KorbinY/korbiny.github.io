@@ -44,26 +44,21 @@ education:
 - name: Michigan State University
   logo: /assets/images/badges/michigan-state-logo-png-transparent.png
   logo_size: 25px
-  position: >- 
-    Department of Computer Science and Engineering <br/>
-    Ph.D. Candidate
+  position: Ph.D. Candidate, Department of Computer Science and Engineering
+    
   date: Aug. 2022 – present
 
 - name: Fudan University
   logo: /assets/images/badges/fudan-logo-png-transparent.png
   logo_size: 25px
-  position: >- 
-    School of Data Science <br/>
-    Master of Applied Statistics
-  date: Sep. 2019 – Jul. 2021
+  position: Master of Applied Statistics, School of Data Science <br/>
+  date: Sep. 2019 – Jun. 2021
 
 - name: Fudan University
   logo: /assets/images/badges/fudan-logo-png-transparent.png
   logo_size: 25px
-  position: >- 
-    Department of Sociology <br/>
-    Bachelor of Sociology
-  date: Sep. 2015 – Jul. 2019
+  position: Bachelor of Sociology, Department of Sociology <br/> 
+  date: Sep. 2015 – Jun. 2019
 
 
 experience:
