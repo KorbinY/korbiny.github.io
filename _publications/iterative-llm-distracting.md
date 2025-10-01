@@ -12,6 +12,6 @@ authors:
   - Hui Liu
 links:
   Paper: https://arxiv.org/
-# cover: /assets/images/covers/.png
+cover: /assets/images/covers/iterative-llm-distracting.png
 selected: false
 ---
