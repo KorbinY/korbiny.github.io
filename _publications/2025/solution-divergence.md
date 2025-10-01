@@ -12,5 +12,6 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2509.22480
 type: preprint
+cover: /assets/images/covers/solution-divergence.png
 selected: false
 ---

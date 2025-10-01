@@ -12,5 +12,6 @@ authors:
   - Hui Liu
 links:
   Paper: https://arxiv.org/abs/2402.12620
+cover: /assets/images/covers/llm-social-predictors.png
 selected: false
 ---

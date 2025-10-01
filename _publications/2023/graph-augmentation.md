@@ -10,5 +10,6 @@ authors:
   - Hui Liu
 links:
   Paper: https://arxiv.org/abs/2310.13845
+cover: /assets/images/covers/graph-augmentation.png
 selected: false
 ---

@@ -15,5 +15,6 @@ authors:
   - Hui Liu
 links:
   Paper: https://arxiv.org/abs/2404.07960
+cover: /assets/images/covers/content-knowledge.png
 selected: false
 ---

@@ -16,5 +16,6 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2504.05276
 type: preprint
+cover: /assets/images/covers/short-answer-rag.png
 selected: false
 ---

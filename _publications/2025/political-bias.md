@@ -13,5 +13,6 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2412.16746
 type: preprint
+cover: /assets/images/covers/political-bias.png
 selected: false
 ---

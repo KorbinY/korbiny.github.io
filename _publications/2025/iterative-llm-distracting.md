@@ -11,6 +11,7 @@ authors:
   - Mi Tian
   - Hui Liu
 links:
-  Paper: https://arxiv.org/abs/2412.16838
+  Paper: https://arxiv.org/
+# cover: /assets/images/covers/.png
 selected: false
 ---

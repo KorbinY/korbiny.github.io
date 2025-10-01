@@ -11,5 +11,6 @@ authors:
   - Jiliang Tang
 links:
   Paper: https://arxiv.org/abs/2504.05239
+cover: /assets/images/covers/llm-automated-grading.png
 selected: false
 ---
