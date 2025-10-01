@@ -1,6 +1,6 @@
 ---
 title: "Are Large Language Models (LLMs) Good Social Predictors?"
-date: 2024-01-01
+date: 2024-11-12
 pub: "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
 pub_date: 2024
 authors:

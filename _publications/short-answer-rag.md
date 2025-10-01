@@ -1,6 +1,6 @@
 ---
 title: "Enhancing LLM-Based Short Answer Grading with Retrieval-Augmented Generation"
-date: 2025-01-01
+date: 2025-04-01
 pub: "arXiv preprint arXiv:2504.05276"
 pub_date: 2025
 authors:

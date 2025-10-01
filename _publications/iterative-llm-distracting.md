@@ -1,6 +1,6 @@
 ---
 title: "Iterative LLM-Based Generation and Refinement of Distracting Conditions in Math Word Problems"
-date: 2025-01-01
+date: 2025-09-14
 pub: "IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)"
 pub_date: 2025
 authors:

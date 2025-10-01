@@ -1,6 +1,6 @@
 ---
 title: "A LLM-Driven Multi-Agent Systems for Professional Development of Mathematics Teachers"
-date: 2025-01-01
+date: 2025-07-01
 pub: "arXiv preprint arXiv:2507.05292"
 pub_date: 2025
 authors:

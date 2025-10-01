@@ -1,6 +1,6 @@
 ---
 title: "Content Knowledge Identification with Multi-Agent Large Language Models (LLMs)"
-date: 2024-01-01
+date: 2024-07-08
 pub: "International Conference on Artificial Intelligence in Education (AIED)"
 pub_date: 2024
 authors:
