@@ -4,6 +4,7 @@ navbar_name: "Kaiqi"
 
 positions:
 - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
+  logo_width: 55px
   name: Ph.D. Candidate, Computer Science, Michigan State University
 - name: Research Assistant, Data Science and Engineering Lab
 
@@ -39,16 +40,19 @@ portrait_caption: >-
 education:
 - name: Michigan State University
   logo: /assets/images/badges/michigan-state-logo-png-transparent.png
+  logo_width: 55px
   position: >- 
     Department of Computer Science and Engineering <br/>
     Ph.D. Candidate
   date: Aug. 2022 – present
 - name: Fudan University
   logo: /assets/images/badges/fudan-logo-png-transparent.png
+  logo_width: 55px
   position: Master of Applied Statistics, School of Data Science
   date: Sep. 2019 – Jul. 2021
 - name: Fudan University
   logo: /assets/images/badges/fudan-logo-png-transparent.png
+  logo_width: 55px
   position: Bachelor of Sociology, Department of Sociology
   date: Sep. 2015 – Jul. 2019
 
