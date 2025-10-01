@@ -5,8 +5,9 @@ navbar_name: "Korbin"
 positions:
 # - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
 #   logo_size: 25px
-- name: &nbsp;&nbsp;&nbsp;&nbsp; Ph.D. Candidate, Computer Science, Michigan State University
-- name: &nbsp;&nbsp;&nbsp;&nbsp; Graduate Research Assistant, <a href="https://dse.cse.msu.edu" target="_blank" rel="noopener noreferrer"> Data Science and Engineering Lab </a>
+  - name: "    Ph.D. Candidate, Computer Science, Michigan State University"
+  - name: "    Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'> Data Science and Engineering Lab </a>"
+
 
 
 email: "kqyang@msu.edu"
