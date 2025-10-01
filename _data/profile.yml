@@ -20,6 +20,7 @@ twitter: korbinramble  # Do not include the '@' symbol
 linkedin: korbiny
 # orcid: 0000-0000-0000-0000
 
+
 short_bio_text_justify: false
 short_bio: >-
   <p>
@@ -33,9 +34,11 @@ short_bio: >-
     I have published multiple first-author papers at top conferences and actively serve as a reviewer for major AI/ML conferences and jornals.
   </p>
 
+
 portrait_url: /assets/images/photos/Korbin2021b.jpg
 portrait_caption: >-
   Headshot in 2021.
+
 
 education:
 - name: Michigan State University
@@ -55,6 +58,24 @@ education:
   logo_size: 25px
   position: Bachelor of Sociology, Department of Sociology
   date: Sep. 2015 – Jul. 2019
+
+
+experience:
+- name: Amazon Inc
+  logo: /assets/images/badges/Amazon-Logo-Transparent-PNG.png
+  position: Research Scientist Intern
+  date: Aug. 2025 - Nov. 2025
+
+- name: TAL Education Group 
+  logo: /assets/images/badges/TAL.png
+  position: Research Intern
+  date: Jun. 2024 – Aug. 2024
+
+- name: Department of Computing, The Hong Kong Polytechnic University
+  logo: /assets/images/badges/hong-kong-polytechnic-university-logo.png
+  position: Research Intern
+  date: May. 2023 – Aug. 2023
+
 
 awards:
 - name: CIKM Student Travel Award
