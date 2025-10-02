@@ -56,5 +56,5 @@ Generative Artificial Intelligence (GenAI) has rapidly emerged as a transformati
 ## Slides
 <a href="{{ '/assets/files/EDM2025 GenAI Tutorial compressed.pdf' | relative_url }}" 
    class="btn btn-sm btn-primary ml-2 align-baseline" target="_blank">
-   <i class="fas fa-file-pdf"> Download Slides (PDF) </i>
+   <i class="fas fa-file-pdf"></i> Download Slides (PDF) 
 </a>
