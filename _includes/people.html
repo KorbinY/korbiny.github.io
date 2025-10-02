@@ -2,21 +2,26 @@
   {% for p in page.presenters %}
   <table class="imgtable">
     <tr>
-      <td>
+      <td valign="top">
         <img src="{{ p.photo }}" alt="Image of {{ p.name }}" width="{{ p.photo_size | default: '238px' }}" height="{{ p.photo_size | default: '238px' }}" />
       </td>
-      <td align="left">
+      <td valign="top" align="left">
         <p>
           {% if p.link %}
-            <a href="{{ p.link }}"><b>{{ p.name }}</b></a>
+            {% assign replacement = '<a href="' | append: p.link | append: '"><span style="font-size: 1.25em; font-weight: bold;">' | append: p.name | append: '</span></a>' %}
           {% else %}
-            <b>{{ p.name }}</b>
+            {% assign replacement = '<span style="font-size: 1.25em; font-weight: bold;">' | append: p.name | append: '</span>' %}
           {% endif %}
-          <br/>
-          {{ p.bio }}
+
+          {{ p.bio 
+             | replace: '<b>', '' 
+             | replace: '</b>', '' 
+             | replace: p.name, replacement 
+          }}
         </p>
       </td>
     </tr>
   </table>
+  <br/><br/>
   {% endfor %}
 </div>
