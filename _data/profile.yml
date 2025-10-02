@@ -5,7 +5,7 @@ navbar_name: "Korbin"
 positions:
 # - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
 #   logo_size: 35px
-  - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Candidate, Computer Science, Michigan State University</i>"
+  - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Student, Computer Science, Michigan State University</i>"
   - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'>Data Science and Engineering Lab</a></i>"
 
 
@@ -24,7 +24,7 @@ linkedin: korbiny
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. candidate in Computer Science and Engineering at Michigan State University, 
+    I am a 4th-year Ph.D. in Computer Science at Michigan State University, 
     advised by Dr. Hui Liu and Dr. Jiliang Tang. My research interests lie in 
     <b>Large Language Models (LLMs)</b>, <b>Computational Social Science</b>, and <b>AI for Education</b>, with a focus on developing reasoning methods and evaluating LLMs in real-world social and educational contexts.
   </p>
@@ -35,7 +35,7 @@ short_bio: >-
     I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals. 
   </p>
   <p>
-    Please can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding: 0.1em 0.4em; font-size: 0.85em;"> <i class="fa-solid fa-id-card"></i> CV </a> here.
+    Please can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding: 0.1em 0.4em; font-size: 0.85em;"> <i class="fa-solid fa-id-card"></i> <span>CV</span> </a> here.
   </p>
 
 
