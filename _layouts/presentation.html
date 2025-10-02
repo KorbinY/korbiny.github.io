@@ -32,7 +32,7 @@
 
     <!-- participants -->
     {% if page.presenters %}
-    <h2>Presenters</h2>
+    <h2>{{ page.presenters_title | default: "Presenters" }}</h2>
     {% include people.html %}
     {% endif %}
 
