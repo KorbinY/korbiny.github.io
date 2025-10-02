@@ -10,14 +10,18 @@
                             data-original="{{ site.data.profile.portrait_url | relative_url }}"
                             data-alt="{{ site.data.profile.portrait_url2 | relative_url }}"
                             data-caption-original="{{ site.data.profile.portrait_caption }}"
-                            data-caption-alt="{{ site.data.profile.portrait_caption2 }}">
-                        <img 
-                            class="portrait-img figure-img img-fluid img-thumbnail" 
-                            src="{{ site.data.profile.portrait_url | relative_url }}" 
-                            style="height: 200px;"
-                            data-toggle="tooltip" 
-                            data-placement="top" 
-                            title="{{ site.data.profile.portrait_caption }}">
+                            data-caption-alt="{{ site.data.profile.portrait_caption2 }}"
+                            data-forward-original="{{ site.data.profile.portrait_forward }}"
+                            data-forward-alt="{{ site.data.profile.portrait_forward2 }}">
+                            <a class="portrait-link" target="_blank">
+                                <img 
+                                class="portrait-img figure-img img-fluid img-thumbnail" 
+                                src="{{ site.data.profile.portrait_url | relative_url }}" 
+                                style="height: 200px;"
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="{{ site.data.profile.portrait_caption }}">
+                            </a>
                         </div>
                         {% endif %}
 

@@ -3,52 +3,74 @@ function initPortraitSwitchers() {
 
   containers.forEach(function(container) {
     var img = container.querySelector(".portrait-img");
+    var link = container.querySelector(".portrait-link");
     if (!img) return;
 
+    // Get attributes for original and alternative states
     var originalSrc = container.getAttribute("data-original");
     var altSrc = container.getAttribute("data-alt");
     var originalCaption = container.getAttribute("data-caption-original");
     var altCaption = container.getAttribute("data-caption-alt");
-    if (!altSrc) return; // skip if no second portrait
+    var originalForward = container.getAttribute("data-forward-original");
+    var altForward = container.getAttribute("data-forward-alt");
+
+    if (!altSrc) return; // skip if no second portrait provided
 
     var hoverTimer;
 
-    // initialize tooltip in normal hover mode
+    // Initialize tooltip if jQuery/Bootstrap tooltip is available
     if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
       $(img).tooltip({ trigger: 'hover' });
     }
 
+    // Initialize link with original forward URL (if any)
+    if (link && originalForward) {
+      link.setAttribute("href", originalForward);
+    } else if (link) {
+      link.removeAttribute("href");
+    }
+
+    // Handle mouse enter (hover start)
     container.addEventListener("mouseenter", function() {
       hoverTimer = setTimeout(function() {
-        // switch to the second image
+        // Switch to the alternative image
         img.setAttribute("src", altSrc);
 
-        // update caption (title) and refresh tooltip
+        // Update caption (tooltip title)
         if (altCaption) {
           img.setAttribute("title", altCaption);
           if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
             $(img).tooltip('dispose').tooltip({ trigger: 'hover' }).tooltip('show');
           }
         }
-      }, 3000);
+
+        // Update link
+        if (link) {
+          if (altForward) {
+            link.setAttribute("href", altForward);
+          } else if (originalForward) {
+            // fallback to original if altForward not provided
+            link.setAttribute("href", originalForward);
+          } else {
+            link.removeAttribute("href");
+          }
+        }
+      }, 3000); // delay before switching
     });
 
+    // Handle mouse leave (hover end)
     container.addEventListener("mouseleave", function() {
       clearTimeout(hoverTimer);
 
-      // revert to the original image
+      // Revert to the original image
       img.setAttribute("src", originalSrc);
 
-      // restore original caption
+      // Restore original caption (tooltip title)
       if (originalCaption) {
         img.setAttribute("title", originalCaption);
         if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
           $(img).tooltip('dispose').tooltip({ trigger: 'hover' });
-          // no manual show here, so it will hide naturally on mouseleave
         }
       }
-    });
-  });
-}
 
-document.addEventListener("DOMContentLoaded", initPortraitSwitchers);
+      // Restore original link
