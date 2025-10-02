@@ -35,7 +35,7 @@ short_bio: >-
     I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals. 
   </p>
   <p>
-    You can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding:0.1em 0.4em;font-size:0.85em;"><i class="fa-solid fa-id-card"></i><span style="font-family:'Courier New',Consolas,monospace;font-weight:bold;">&nbsp;CV&nbsp;&#x2198;</span></a> <img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px;height:1px;opacity:0;vertical-align:middle;">here.
+    You can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding:0.1em 0.4em;font-size:0.85em;"><i class="fa-solid fa-id-card"></i><span class="cv-text">&nbsp;CV&nbsp;</span></a><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px;height:1px;opacity:0;vertical-align:middle;"> here.
   </p>
 
 

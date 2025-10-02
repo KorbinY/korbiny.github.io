@@ -1,0 +1,23 @@
+.cv-text {
+  font-family: 'Courier New', Consolas, monospace;
+  font-weight: bold;
+}
+
+/* Default fallback → ">" */
+.cv-text::after {
+  content: ">";
+}
+
+/* Fallback to Unicode up-right arrow (U+2197) */
+@supports (content: "\2197") {
+  .cv-text::after {
+    content: "\2197";
+  }
+}
+
+/* Prefer emoji up-right arrow (U+2197 U+FE0F) */
+@supports (content: "\2197\FE0F") {
+  .cv-text::after {
+    content: "\2197\FE0F";
+  }
+}
