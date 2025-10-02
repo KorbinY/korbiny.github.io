@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/jemdoc.css" type="text/css" />
+</head>
+
+<body>
+  <div id="layout-content">
+    
+    <!-- heading -->
+    <div id="toptitle">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <div id="subtitle">
+        {{ page.subtitle }}
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- main -->
+    <div id="page-content">
+      {{ content }}
+    </div>
+
+    <!-- participants -->
+    {% if page.presenters %}
+    <h2>Presenters</h2>
+    {% include people.html %}
+    {% endif %}
+
+    <!-- footer -->
+    <div id="footer">
+    <div id="footer-text">
+        {% if page.footer_note %}
+        {{ page.footer_note }}, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+        {% else %}
+        Page generated {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+        {% endif %}
+    </div>
+    </div>
+
+  </div>
+</body>
+</html>

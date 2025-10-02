@@ -1,0 +1,22 @@
+<div class="presenters">
+  {% for p in page.presenters %}
+  <table class="imgtable">
+    <tr>
+      <td>
+        <img src="{{ p.photo }}" alt="Image of {{ p.name }}" width="{{ p.photo_size | default: '238px' }}" height="{{ p.photo_size | default: '238px' }}" />
+      </td>
+      <td align="left">
+        <p>
+          {% if p.link %}
+            <a href="{{ p.link }}"><b>{{ p.name }}</b></a>
+          {% else %}
+            <b>{{ p.name }}</b>
+          {% endif %}
+          <br/>
+          {{ p.bio }}
+        </p>
+      </td>
+    </tr>
+  </table>
+  {% endfor %}
+</div>
