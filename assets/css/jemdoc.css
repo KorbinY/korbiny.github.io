@@ -1,8 +1,9 @@
 /* Default css file for jemdoc. */
 #layout-content {
     padding-top: 2em;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
 }
