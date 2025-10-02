@@ -1,3 +1,4 @@
+// Switch the Portrait Section
 function initPortraitSwitchers() {
   var containers = document.querySelectorAll(".portrait-block");
 
