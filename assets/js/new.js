@@ -13,16 +13,21 @@ function initPortraitSwitchers() {
 
     var hoverTimer;
 
+    // initialize tooltip in normal hover mode
+    if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
+      $(img).tooltip({ trigger: 'hover' });
+    }
+
     container.addEventListener("mouseenter", function() {
       hoverTimer = setTimeout(function() {
         // switch to the second image
         img.setAttribute("src", altSrc);
 
-        // update tooltip caption and keep it visible
+        // update caption (title) and refresh tooltip
         if (altCaption) {
           img.setAttribute("title", altCaption);
           if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
-            $(img).tooltip('dispose').tooltip({trigger: 'manual'}).tooltip('show');
+            $(img).tooltip('dispose').tooltip({ trigger: 'hover' }).tooltip('show');
           }
         }
       }, 3000);
@@ -34,11 +39,12 @@ function initPortraitSwitchers() {
       // revert to the original image
       img.setAttribute("src", originalSrc);
 
-      // restore original tooltip caption
+      // restore original caption
       if (originalCaption) {
         img.setAttribute("title", originalCaption);
         if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
-          $(img).tooltip('dispose').tooltip({trigger: 'manual'}).tooltip('show');
+          $(img).tooltip('dispose').tooltip({ trigger: 'hover' });
+          // no manual show here, so it will hide naturally on mouseleave
         }
       }
     });
