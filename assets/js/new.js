@@ -9,20 +9,20 @@ function initPortraitSwitchers() {
     var altSrc = container.getAttribute("data-alt");
     var originalCaption = container.getAttribute("data-caption-original");
     var altCaption = container.getAttribute("data-caption-alt");
-    if (!altSrc) return; // skip if no portrait_url2
+    if (!altSrc) return; // skip if no second portrait
 
     var hoverTimer;
 
     container.addEventListener("mouseenter", function() {
       hoverTimer = setTimeout(function() {
-        // go to image 2
+        // switch to the second image
         img.setAttribute("src", altSrc);
-        // go to caption 2
+
+        // update tooltip caption and keep it visible
         if (altCaption) {
           img.setAttribute("title", altCaption);
-          // refresh tooltip, fit Bootstrap Tooltip
           if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
-            $(img).tooltip('dispose').tooltip();
+            $(img).tooltip('dispose').tooltip({trigger: 'manual'}).tooltip('show');
           }
         }
       }, 3000);
@@ -30,13 +30,15 @@ function initPortraitSwitchers() {
 
     container.addEventListener("mouseleave", function() {
       clearTimeout(hoverTimer);
-      // go back to image 1
+
+      // revert to the original image
       img.setAttribute("src", originalSrc);
-      // go back to caption 1
+
+      // restore original tooltip caption
       if (originalCaption) {
         img.setAttribute("title", originalCaption);
         if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
-          $(img).tooltip('dispose').tooltip();
+          $(img).tooltip('dispose').tooltip({trigger: 'manual'}).tooltip('show');
         }
       }
     });
