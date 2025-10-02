@@ -35,10 +35,8 @@ short_bio: >-
     I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals. 
   </p>
   <p>
-    You can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding:0.1em 0.4em;font-size:0.85em;position:relative;"><i class="fa-solid fa-id-card"></i><span aria-hidden="true" style="font-family:'Courier New',Consolas,monospace;font-weight:bold;">&nbsp;CV&nbsp;&#x2197;</span><span style="position:absolute; right:2px; bottom:2px; font-size:0.1px; color:transparent;">CV</span></a> here.
+    You can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding:0.1em 0.4em;font-size:0.85em;"><i class="fa-solid fa-id-card"></i><span style="font-family:'Courier New',Consolas,monospace;font-weight:bold;">&nbsp;CV&nbsp;↗</span><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px;height:1px;opacity:0;vertical-align:middle;"></a> here.
   </p>
-
-
 
 
 portrait_url: /assets/images/photos/Korbin2021b.jpg
