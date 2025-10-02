@@ -74,3 +74,15 @@ function initPortraitSwitchers() {
       }
 
       // Restore original link
+      if (link) {
+        if (originalForward) {
+          link.setAttribute("href", originalForward);
+        } else {
+          link.removeAttribute("href");
+        }
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initPortraitSwitchers);
