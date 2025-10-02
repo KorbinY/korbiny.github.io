@@ -10,7 +10,7 @@ positions:
 
 
 email: "kqyang@msu.edu"
-cv_link: /assets/files/My_CV_New.pdf
+# cv_link: /assets/files/My_CV_New.pdf
 gscholar: qXs3XoQAAAAJ  # This is an example, replace it with your own Google Scholar ID
 github: korbiny
 twitter: korbinramble  # Do not include the '@' symbol
@@ -32,8 +32,9 @@ short_bio: >-
     Before starting my Ph.D., I earned an M.S. in Applied Statistics and a B.A. in Sociology from Fudan University, China.
   </p>
   <p>
-    I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals.
+    I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals. You can find my <a href="/assets/files/My_CV_New.pdf" target="_blank" class="btn btn-sm btn-primary align-baseline" style="padding: 0.1em 0.4em; font-size: 0.85em;"> <i class="fa-solid fa-id-card"></i> CV </a> here.
   </p>
+
 
 
 portrait_url: /assets/images/photos/Korbin2021b.jpg
