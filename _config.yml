@@ -22,3 +22,7 @@ collections:
   misc:
     output: true
 
+# Pages
+include:
+  - _pages
+
