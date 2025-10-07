@@ -9,9 +9,15 @@ container_class: container-xl
   <h1 class="mb-4">Curriculum Vitae</h1>
 
   <div class="card border-0 shadow-sm bg-white p-4">
+    <!-- buttons -->
+    <p class="mt-3 text-center">
+    <a href="{{ '/assets/files/My_CV_New.pdf' | relative_url }}" class="btn btn-primary" target="_blank">
+        Open in New Tab
+    </a>
+    </p>
 
     <!-- embed PDF file -->
-    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; height: 80vh;">
+    <div style="border: 1px solid #bbffcb; border-radius: 8px; overflow: hidden; height: 80vh;">
       <embed
         src="{{ '/assets/files/My_CV_New.pdf' | relative_url }}"
         type="application/pdf"
@@ -19,11 +25,5 @@ container_class: container-xl
         height="100%">
     </div>
 
-    <!-- buttons -->
-    <p class="mt-3">
-      <a href="{{ '/assets/files/My_CV_New.pdf' | relative_url }}" class="btn btn-primary" target="_blank">
-        Open in Viewer
-      </a>
-    </p>
   </div>
 </div>
