@@ -21,3 +21,42 @@
     content: "\2197\FE0F";
   }
 }
+
+/* customized Bootstrap secondary button */
+.btn.btn-secondary-deep {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff !important;
+  font-weight: 400;
+  
+  background-color: #5a6268 !important;
+  border-color: #5a6268 !important;
+  padding: 0.1em 0.4em;
+  vertical-align: baseline;
+}
+
+.btn.btn-secondary-deep:hover {
+  background-color: #4e555b !important;
+  border-color: #484e53 !important;
+  color: #fff !important;
+}
+
+.btn.btn-secondary-deep:active,
+.btn.btn-secondary-deep.active {
+  background-color: #3d4348 !important;
+  border-color: #383e42 !important;
+  color: #fff !important;
+}
+
+.btn.btn-secondary-deep:focus,
+.btn.btn-secondary-deep.focus {
+  box-shadow: 0 0 0 0.2rem rgba(90, 98, 104, 0.5) !important;
+}
+
+.btn.btn-secondary-deep:disabled,
+.btn.btn-secondary-deep.disabled {
+  background-color: #5a6268 !important;
+  border-color: #5a6268 !important;
+  color: #fff !important;
+  opacity: 0.65;
+}
