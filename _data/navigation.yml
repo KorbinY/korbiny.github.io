@@ -8,5 +8,5 @@ pages:
 - name: Misc
   url: /misc
 - name: CV
-  url: /assets/files/My_CV_New.pdf
+  url: /cv
   external: true
