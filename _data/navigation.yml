@@ -9,4 +9,4 @@ pages:
   url: /misc
 - name: CV
   url: /cv
-  external: true
+  # external: true
