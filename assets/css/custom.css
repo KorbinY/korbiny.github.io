@@ -65,8 +65,9 @@
 .geo_container {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;  /* Ensure button and container are vertically centered */
     margin-top: 50px;
+    position: relative;   /* Make sure it works with absolute positioning */
 }
 
 .geostat-button {
@@ -76,7 +77,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    margin-right: 10px;  
+    margin-right: 10px;  /* Space between button and map */
 }
 
 .geostat-container {
@@ -85,8 +86,10 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-    margin-top: 10px;  
+    position: absolute;
+    top: 50px;  /* Adjust to ensure it appears above the button */
+    left: 0;
+    z-index: 10;
 }
 
 .geostat-button:hover + .geostat-container {
