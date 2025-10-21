@@ -3,7 +3,7 @@ layout: presentation
 title: "Bringing Generative Artificial Intelligence (GenAI) to Education"
 type: "Tutorial"
 subtitle: >
-  A Tutorial at the <a href="https://educationaldatamining.org/edm2025/" target="_blank">
+  A Tutorial at the <a href="https://educationaldatamining.org/edm2025/">
   Educational Data Mining Conference (EDM 2025)</a><br />
   July 20–23, 2025, Palermo, Italy
 permalink: /tutorials/EDM2025/
