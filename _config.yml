@@ -5,7 +5,7 @@ email: "kqyang@msu.edu"
 description: "Website of Korbin."
 
 
-baseurl: ""
+baseurl: "/"
 
 # Build settings
 markdown: kramdown
