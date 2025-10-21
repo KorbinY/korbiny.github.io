@@ -61,37 +61,40 @@
   opacity: 0.65;
 }
 
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
-.geo_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    position: relative; 
+.geo_wrapper {
+  position: relative;      
+  display: inline-block;
 }
 
 .geostat-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;  
+  cursor: pointer;
+  padding: 6px 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 .geostat-container {
-    display: none;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: -50px;  
-    left: 0;
-    z-index: 10;
+  display: none;
+  position: absolute;
+  bottom: 120%;            
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;           
 }
 
 .geostat-button:hover + .geostat-container {
-    display: block;
+  display: block;
 }
