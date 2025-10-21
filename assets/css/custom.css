@@ -60,3 +60,36 @@
   color: #fff !important;
   opacity: 0.65;
 }
+
+.geo_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.geostat-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;  
+}
+
+.geostat-container {
+    display: none;  
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+}
+
+
+.geostat-button:hover + .geostat-container {
+    display: block;  
+}
