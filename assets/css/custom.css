@@ -164,7 +164,7 @@
 .citeblock-card pre {
   margin: 0;
   padding-top: 28px;
-  max-height: 10ch;
+  max-height: 20ch;
   overflow: auto;
   font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: 13.5px;
