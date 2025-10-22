@@ -13,19 +13,19 @@ footer_note: "Page generated 2025-04-08 10:30:00 EST"
 presenters:
   - name: Hang Li
     link: https://hzlihang99.github.io/
-    photo: https://dse.cse.msu.edu/photos/hang.JPG
+    photo: https://dse.cse.msu.edu/photos/hang.jpg
     bio: >
       <b>Hang Li</b> is a Ph.D. student at Michigan State University. He holds an M.S. in Statistics from the University of Illinois at Urbana-Champaign and a B.S. in Information and Computing Science from Beijing Jiaotong University. His research interests include Graph Neural Networks, Generative AI, and AI for Education. He has received several accolades, including 2nd Place in the OGB-LSC @ NeurIPS Node Classification Competition and 1st Place in the ACM Ubicomp STABILO Time Series Classification Challenge 2020. His prior research has been published in top-tier AI and education conferences, including AAAI, KDD, EMNLP, AIED, and EDM, among others. He regularly serves as an external reviewer for various data mining, natural language processing and machine learning conferences including ACL, AAAI, WWW, KDD, TKDE, IJCAI, etc.
 
   - name: Kaiqi Yang
     link: https://www.cse.msu.edu/~kqyang/
-    photo: https://dse.cse.msu.edu/photos/kaiqi.JPG
+    photo: https://dse.cse.msu.edu/photos/kaiqi.jpg
     bio: >
       <b>Kaiqi Yang</b> is a Ph.D. student of Computer Science and Engineering at Michigan State University. He received a Master’s degree in Applied Statistics and a Bachelor’s degree in Sociology from Fudan University. His research interests include Social Computing, AI for Social Science, and Social Networks. His work has been accepted at leading conferences on data mining and natural language processing, such as CIKM, EMNLP, and AIED. He serves as a reviewer for ACL, TKDD, TKDE, CIKM, KDD, RecSys, etc.
 
   - name: Yucheng Chu
     link: https://scholar.google.com/citations?user=0DuJ1BgAAAAJ
-    photo: https://dse.cse.msu.edu/photos/yucheng.JPG
+    photo: https://dse.cse.msu.edu/photos/yucheng.jpg
     bio: >
       <b>Yucheng Chu</b> is a Ph.D. student at Michigan State University. She holds a B.S. in Computer Science from Columbia University. Her research interests include Generative AI and AI for Education. Her prior research has been published in top-tier AI and education conferences such as AIED.
 
