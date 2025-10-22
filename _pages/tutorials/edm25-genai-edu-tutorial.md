@@ -77,18 +77,17 @@ Generative Artificial Intelligence (GenAI) has rapidly emerged as a transformati
   <span class="citeblock-toast">Copied</span>
   <pre><code>
     @inproceedings{Li2025BringingGenAI2Edu,
-     title = {Bringing Generative Artificial Intelligence (GenAI) to Education},
-     author = {Hang Li and Kaiqi Yang and Yucheng Chu and Jiliang Tang},
-     year = {2025}
-     month = {July},
-     address = {Palermo, Italy},
-     booktitle = {Proceedings of the 18th International Conference on Educational Data Mining},
-     doi = {10.5281/zenodo.15870320},
-     editor = {Caitlin Mills and Giora Alexandron and Davide Taibi and Giosuè Lo Bosco and Luc Paquette},
-     isbn = {978-1-7336736-6-2},
-     pages = {699--704},
-     publisher = {International Educational Data Mining Society},
-
+      title = {Bringing Generative Artificial Intelligence (GenAI) to Education},
+      author = {Hang Li and Kaiqi Yang and Yucheng Chu and Jiliang Tang},
+      year = {2025}
+      month = {July},
+      address = {Palermo, Italy},
+      booktitle = {Proceedings of the 18th International Conference on Educational Data Mining},
+      doi = {10.5281/zenodo.15870320},
+      editor = {Caitlin Mills and Giora Alexandron and Davide Taibi and Giosuè Lo Bosco and Luc Paquette},
+      isbn = {978-1-7336736-6-2},
+      pages = {699--704},
+      publisher = {International Educational Data Mining Society},
     }
 </code></pre>
 </figure>
