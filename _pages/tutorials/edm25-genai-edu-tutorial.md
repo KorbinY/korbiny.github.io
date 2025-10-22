@@ -55,8 +55,18 @@ Generative Artificial Intelligence (GenAI) has rapidly emerged as a transformati
 4. **Demo Systems Experience**  
 5. **Future Directions and Q&A**
 
-## Slides
+## Resources
 <a href="{{ '/assets/files/EDM2025_GenAI_Edu_Tutorial_compressed.pdf' | relative_url }}" 
    class="btn btn-sm btn-primary ml-2 align-baseline" target="_blank">
    <i class="fas fa-file-pdf"></i> Download Slides (PDF) 
+</a>
+
+<a href="https://educationaldatamining.org/edm2025/proceedings/2025.EDM.workshop-tutorial-abstracts.250/index.html" 
+   class="btn btn-sm btn-primary ml-2 align-baseline" target="_blank">
+   <i class="fas fa-file-pdf"></i> View Paper In EDM 2025
+</a>
+
+<a href="https://scholar.google.com/citations?view_op=view_citation&citation_for_view=qXs3XoQAAAAJ:Z5m8FVwuT1cC" 
+   class="btn btn-sm btn-primary ml-2 align-baseline" target="_blank">
+   <i class="fas fa-file-pdf"></i> View Paper In Google Scholar
 </a>
