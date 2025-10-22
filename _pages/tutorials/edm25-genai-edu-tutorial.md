@@ -70,3 +70,14 @@ Generative Artificial Intelligence (GenAI) has rapidly emerged as a transformati
    class="btn btn-sm btn-primary ml-2 align-baseline" target="_blank">
    <i class="fas fa-file-pdf"></i> View Paper In Google Scholar
 </a>
+
+<figure class="citeblock-card" data-language="bibtex">
+  <span class="citeblock-lang">bibtex</span>
+  <button class="citeblock-copy" type="button">Copy</button>
+  <span class="citeblock-toast">Copied</span>
+  <pre><code>@article{li2025bringing,
+  title={Bringing Generative Artificial Intelligence (GenAI) to Education},
+  author={Li, Hang and Yang, Kaiqi and Chu, Yucheng and Tang, Jiliang},
+  year={2025}
+}</code></pre>
+</figure>

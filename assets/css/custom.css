@@ -70,6 +70,8 @@
     flex-wrap: nowrap;
 }
 
+
+/* map statistics block  */
 .geo_wrapper {
     position: relative;
     display: inline-block;
@@ -99,4 +101,72 @@
 
 .geo_wrapper:hover .geostat-container {
     display: block;
+}
+
+
+/* citation block  */
+.citeblock-card {
+  position: relative;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #0b1020;
+  color: #e5e7eb;
+  padding: 14px;
+  margin: 18px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  overflow: hidden
+}
+.citeblock-lang {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: #cbd5e1;
+  user-select: none
+}
+.citeblock-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid #334155;
+  background: #121a2f;
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform .05s, background .15s
+}
+.citeblock-copy:hover { background:#172244 }
+.citeblock-copy:active { transform: scale(.98) }
+.citeblock-copy[aria-disabled="true"] { opacity:.6; cursor:not-allowed }
+.citeblock-toast {
+  position: absolute;
+  top: 10px;
+  right: 86px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: #16a34a;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity .18s, transform .18s
+}
+.citeblock-toast.show {
+  opacity: 1;
+  transform: translateY(0)
+}
+.citeblock-card pre {
+  margin: 0;
+  padding-top: 28px;
+  overflow: auto;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 13.5px;
+  line-height: 1.6;
+  white-space: pre
 }
