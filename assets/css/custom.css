@@ -129,10 +129,11 @@
 }
 .citeblock-copy {
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 8px;
+  margin: 10px;
   border: 1px solid #f5f5f5;
-  background: #121a2f;
+  background: #022b6d;
   color: #cbd5e1;
   padding: 6px 10px;
   border-radius: 8px;
