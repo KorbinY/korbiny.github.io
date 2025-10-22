@@ -133,12 +133,17 @@
   right: 8px;
   border: 1px solid #334155;
   background: #121a2f;
-  color: #e5e7eb;
+  color: #cbd5e1;
   padding: 6px 10px;
   border-radius: 8px;
   font-size: 12px;
   cursor: pointer;
-  transition: transform .05s, background .15s
+  transition: transform .05s, background .15s;
+  min-width: 8ch;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .citeblock-copy:hover { background:#172244 }
 .citeblock-copy:active { transform: scale(.98) }
