@@ -16,7 +16,7 @@
         setTimeout(()=>{
           citeblockToast.classList.remove('show')
           citeblockBtn.innerHTML = 'Copy &#10697;'
-        },1400)
+        },3000)
       } catch {}
     })
   })

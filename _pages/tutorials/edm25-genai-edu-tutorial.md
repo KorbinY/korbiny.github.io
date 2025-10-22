@@ -75,9 +75,13 @@ Generative Artificial Intelligence (GenAI) has rapidly emerged as a transformati
   <span class="citeblock-lang">bibtex</span>
   <button class="citeblock-copy" type="button">Copy</button>
   <span class="citeblock-toast">Copied</span>
-  <pre><code>@article{li2025bringing,
-  title={Bringing Generative Artificial Intelligence (GenAI) to Education},
-  author={Li, Hang and Yang, Kaiqi and Chu, Yucheng and Tang, Jiliang},
-  year={2025}
-}</code></pre>
+  <pre><code>
+    @inproceedings{Li2025BringingGA,
+      title={Bringing Generative Artificial Intelligence (GenAI) to Education},
+      author={Hang Li and Kaiqi Yang and Yucheng Chu and Jiliang Tang},
+      booktitle={Educational Data Mining},
+      year={2025},
+      url={hhttps://educationaldatamining.org/edm2025/proceedings/2025.EDM.workshop-tutorial-abstracts.250/index.html}
+    }
+</code></pre>
 </figure>

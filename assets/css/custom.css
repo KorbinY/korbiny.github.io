@@ -170,3 +170,6 @@
   line-height: 1.6;
   white-space: pre
 }
+.citeblock-card pre code {
+  color: #cbd5e1;
+}
