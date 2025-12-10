@@ -13,3 +13,5 @@ Gemfile.lock
 .github/ISSUE_TEMPLATE/
 
 *.ipynb
+
+.gitignore
