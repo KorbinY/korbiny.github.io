@@ -12,20 +12,28 @@ body_attr: >-
     <!-- ===== Presentations Section ===== -->
     <h1 class="pt-4" id="misc-presentations"><i class="fas fa-presentation"></i> Presentations</h1>
     {% assign presentations = site.misc | where: "group", "Presentation" | sort: "date" | reverse %}
+    {% if presentations.size > 0 %}
     <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
       {% for item in presentations %}
         {% include widgets/misc_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
       {% endfor %}
     </div>
+    {% else %}
+    <p class="text-muted">No presentations yet.</p>
+    {% endif %}
 
     <!-- ===== Teaching Section ===== -->
     <h1 class="pt-4" id="misc-teaching"><i class="fas fa-chalkboard-user"></i> Teaching</h1>
     {% assign teaching = site.misc | where: "group", "Teaching" | sort: "date" | reverse %}
+    {% if teaching.size > 0 %}
     <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
       {% for item in teaching %}
         {% include widgets/misc_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
       {% endfor %}
     </div>
+    {% else %}
+    <p class="text-muted">No teaching content yet.</p>
+    {% endif %}
 
     <br>
   </div>

@@ -1,15 +1,15 @@
 ---
-show: true
-width: 6
-date: 2025-01-10 00:00:00 +0000
+title: "CSE 482 Big Data Analysis"
+date: 2024-01-10
+pub: "Undergrad, CSE, MSU"
+pub_date: "Spring 2025"
+authors: 
+  - Hui Liu
+  - Hamid Karimian
+  - Kaiqi Yang
+  - Juanhui Li
 group: "Teaching"
+cover: /assets/images/covers/cse482-25.png
+links:
+  Link: "https://web.archive.org/web/20250228132356/https://cse.msu.edu/~cse482/"
 ---
-
-<div class="p-3">
-  <p>
-    CSE 482 Big Data Analysis (Spring 2025)
-    <a href="https://web.archive.org/web/20250228132356/https://cse.msu.edu/~cse482/" class="btn btn-sm btn-primary ml-2 align-baseline">
-      Go to Course Page &raquo;
-    </a>
-  </p>
-</div>

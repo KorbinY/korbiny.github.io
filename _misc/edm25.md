@@ -1,15 +1,15 @@
 ---
-show: true
-width: 6
-date: 2025-07-20 00:00:00 +0000
+title: "Bringing Generative Artificial Intelligence (GenAI) to Education"
+date: 2025-07-20
+pub: "Tutorial in the Educational Data Mining Conference (EDM)"
+pub_date: 2025
+authors:
+  - Hang Li
+  - Kaiqi Yang
+  - Yucheng Chu
+  - Jiliang Tang
 group: "Presentation"
+cover: /assets/images/covers/genai-edu-tutorial.png
+links:
+  Link: "{{ '/tutorials/EDM2025/' | relative_url }}"
 ---
-
-<div class="p-3">
-  <p>
-    EDM 2025 Tutorial: Bringing Generative Artificial Intelligence (GenAI) to Education 
-    <a href="{{ '/tutorials/EDM2025/' | relative_url }}" class="btn btn-sm btn-primary ml-2 align-baseline">
-      Go to Tutorial &raquo;
-    </a>
-  </p>
-</div>
