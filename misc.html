@@ -2,22 +2,40 @@
 layout: default
 title : Misc
 navbar_title: Misc
-container_class: container-xl
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-misc" data-offset="100"
 ---
 
-{% if site.misc and site.misc.size > 0 %}
-  {% assign cards_by_group = site.misc | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
+<div class="row">
+  <div class="col-12 col-lg-10">
 
-  {% for group in cards_by_group %}
-    <h1>{{ group.name }}</h1>
-    {% for item in group.items %}
-      <div class="p-2 mb-3">
-        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
-          {{ item.content }}
-        </div>
-      </div>
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  <p>No misc items yet.</p>
-{% endif %}
+    <!-- ===== Presentations Section ===== -->
+    <h1 class="pt-4" id="misc-presentations"><i class="fas fa-presentation"></i> Presentations</h1>
+    {% assign presentations = site.misc | where: "group", "Presentation" | sort: "date" | reverse %}
+    <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+      {% for item in presentations %}
+        {% include widgets/misc_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+      {% endfor %}
+    </div>
+
+    <!-- ===== Teaching Section ===== -->
+    <h1 class="pt-4" id="misc-teaching"><i class="fas fa-chalkboard-user"></i> Teaching</h1>
+    {% assign teaching = site.misc | where: "group", "Teaching" | sort: "date" | reverse %}
+    <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+      {% for item in teaching %}
+        {% include widgets/misc_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+      {% endfor %}
+    </div>
+
+    <br>
+  </div>
+
+  <!-- ===== Right-side category navigation ===== -->
+  <div class="col-2 d-none d-lg-block">
+    <div id="navbar-misc" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+      <h6 class="mt-2"><i class="fas fa-sitemap"></i> Categories</h6>
+      <a class="nav-link d-block" href="#misc-presentations"><i class="fas fa-presentation"></i> Presentations</a>
+      <a class="nav-link d-block" href="#misc-teaching"><i class="fas fa-chalkboard-user"></i> Teaching</a>
+    </div>
+  </div>
+</div>
