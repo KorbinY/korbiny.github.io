@@ -1,7 +1,7 @@
 ---
 title: "CSE 440 Introduction to Artificial Intelligence (24 Fall)"
 date: 2024-09-10
-pub: "Undergrad, CSE, MSU"
+pub: "Undergrad, CSE, MSU; "
 pub_date: "Fall 2024"
 authors: 
   - Hui Liu
