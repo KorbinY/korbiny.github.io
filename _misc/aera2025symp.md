@@ -1,7 +1,7 @@
 ---
-title: "The Use of AI in Education and Research in Meaningful and Responsible Ways"
+title: "Innovative Artificial Intelligence Solutions for Improving Online Professional Development for Teachers: Multi-Agent Large Language Models"
 date: 2025-04-26
-pub: "Symposium in the American Educational Research Association Conference (AERA)"
+pub: "Symposium 'The Use of AI in Education and Research in Meaningful and Responsible Ways' in the American Educational Research Association Conference (AERA)"
 pub_date: 2025
 authors:
   - Kaiqi Yang
