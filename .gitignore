@@ -11,3 +11,5 @@ Gemfile.lock
 
 .DS_Store
 .github/ISSUE_TEMPLATE/
+
+*.ipynb

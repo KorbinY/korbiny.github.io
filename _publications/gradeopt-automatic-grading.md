@@ -14,6 +14,6 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2410.02165
 type: preprint
-cover: /assets/images/covers/automatic-grading.png
+cover: /assets/images/covers/gradeopt-automatic-grading.png
 selected: false
 ---
