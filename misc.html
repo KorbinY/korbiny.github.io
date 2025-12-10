@@ -10,7 +10,7 @@ body_attr: >-
   <div class="col-12 col-lg-10">
 
     <!-- ===== Presentations Section ===== -->
-    <h1 class="pt-4" id="misc-presentations"><i class="fas fa-user-chart"></i> Presentations</h1>
+    <h1 class="pt-4" id="misc-presentations"><i class="fa fa-user-chart"></i> Presentations</h1>
     {% assign presentations = site.misc | where: "group", "Presentation" | sort: "date" | reverse %}
     {% if presentations.size > 0 %}
     <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
@@ -23,7 +23,7 @@ body_attr: >-
     {% endif %}
 
     <!-- ===== Teaching Section ===== -->
-    <h1 class="pt-4" id="misc-teaching"><i class="fas fa-chalkboard-user"></i> Teaching</h1>
+    <h1 class="pt-4" id="misc-teaching"><i class="fa fa-chalkboard-user"></i> Teaching</h1>
     {% assign teaching = site.misc | where: "group", "Teaching" | sort: "date" | reverse %}
     {% if teaching.size > 0 %}
     <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
