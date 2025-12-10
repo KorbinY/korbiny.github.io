@@ -1,6 +1,6 @@
 ---
 title: "CSE 482 Big Data Analysis"
-date: 2024-01-10
+date: 2025-01-10
 pub: "Undergrad, CSE, MSU"
 pub_date: "Spring 2025"
 authors: 
