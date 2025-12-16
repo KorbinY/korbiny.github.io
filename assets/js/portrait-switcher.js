@@ -1,4 +1,3 @@
-// Switch the Portrait Section
 function initPortraitSwitchers() {
   var containers = document.querySelectorAll(".portrait-block");
 
@@ -7,7 +6,6 @@ function initPortraitSwitchers() {
     var link = container.querySelector(".portrait-link");
     if (!img) return;
 
-    // Get attributes for original and alternative states
     var originalSrc = container.getAttribute("data-original");
     var altSrc = container.getAttribute("data-alt");
     var originalCaption = container.getAttribute("data-caption-original");
@@ -15,29 +13,25 @@ function initPortraitSwitchers() {
     var originalForward = container.getAttribute("data-forward-original");
     var altForward = container.getAttribute("data-forward-alt");
 
-    if (!altSrc) return; // skip if no second portrait provided
+    if (!altSrc) return;
 
     var hoverTimer;
 
-    // Initialize tooltip if jQuery/Bootstrap tooltip is available
     if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
       $(img).tooltip({ trigger: 'hover' });
     }
 
-    // Initialize link with original forward URL (if any)
     if (link && originalForward) {
       link.setAttribute("href", originalForward);
     } else if (link) {
       link.removeAttribute("href");
     }
 
-    // Handle mouse enter (hover start)
     container.addEventListener("mouseenter", function() {
       hoverTimer = setTimeout(function() {
-        // Switch to the alternative image
         img.setAttribute("src", altSrc);
+        img.style.height = "250px";
 
-        // Update caption (tooltip title)
         if (altCaption) {
           img.setAttribute("title", altCaption);
           if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
@@ -45,12 +39,10 @@ function initPortraitSwitchers() {
           }
         }
 
-        // Update link
         if (link) {
           if (altForward) {
             link.setAttribute("href", altForward);
           } else if (originalForward) {
-            // fallback to original if altForward not provided
             link.setAttribute("href", originalForward);
           } else {
             link.removeAttribute("href");
@@ -59,14 +51,12 @@ function initPortraitSwitchers() {
       }, 2000); // delay before switching
     });
 
-    // Handle mouse leave (hover end)
     container.addEventListener("mouseleave", function() {
       clearTimeout(hoverTimer);
 
-      // Revert to the original image
       img.setAttribute("src", originalSrc);
+      img.style.height = "200px";
 
-      // Restore original caption (tooltip title)
       if (originalCaption) {
         img.setAttribute("title", originalCaption);
         if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
@@ -74,7 +64,6 @@ function initPortraitSwitchers() {
         }
       }
 
-      // Restore original link
       if (link) {
         if (originalForward) {
           link.setAttribute("href", originalForward);
