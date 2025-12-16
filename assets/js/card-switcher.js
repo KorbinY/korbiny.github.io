@@ -6,9 +6,9 @@ function initPaperCardHover() {
     let leaveTimer;
 
     card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
-    card.style.transformOrigin = "center center";
+    card.style.transformOrigin = "right center"; // horizontal right, vertical center
     card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-    card.style.backgroundColor = ""; 
+    card.style.backgroundColor = "";
 
     card.addEventListener("mouseenter", function() {
       if (leaveTimer) {
@@ -17,10 +17,10 @@ function initPaperCardHover() {
       }
 
       hoverTimer = setTimeout(function() {
-        card.style.transform = "scale(1.2) translateY(-10px)";
+        card.style.transform = "scale(1.2)"; // keep vertical center, right aligned
         card.style.zIndex = 1000;
         card.style.boxShadow = "0 20px 40px rgba(0,0,0,0.2)";
-        card.style.backgroundColor = "rgba(211, 211, 211, 0.9)"; // light gray 90% opacity
+        card.style.backgroundColor = "rgba(211, 211, 211, 0.9)";
         hoverTimer = null;
       }, 1000);
     });
@@ -32,12 +32,18 @@ function initPaperCardHover() {
       }
 
       leaveTimer = setTimeout(function() {
-        card.style.transform = "scale(1) translateY(0)";
+        card.style.transition = "transform 0.1s ease, box-shadow 0.1s ease, z-index 0.1s ease, background-color 0.1s ease";
+        card.style.transform = "scale(1)";
         card.style.zIndex = "";
         card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-        card.style.backgroundColor = ""; // restore original
+        card.style.backgroundColor = "";
         leaveTimer = null;
-      }, 300);
+
+        // restore transition to normal for next hover
+        setTimeout(() => {
+          card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
+        }, 100);
+      }, 0);
     });
   });
 }
