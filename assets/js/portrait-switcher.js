@@ -56,7 +56,7 @@ function initPortraitSwitchers() {
             link.removeAttribute("href");
           }
         }
-      }, 3000); // delay before switching
+      }, 2000); // delay before switching
     });
 
     // Handle mouse leave (hover end)
