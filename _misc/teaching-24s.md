@@ -1,5 +1,5 @@
 ---
-title: "CSE 482 Big Data Analysis"
+title: "CSE 482 Big Data Analysis (24 Spring)"
 date: 2024-01-10
 pub: "Undergrad, CSE, MSU; "
 pub_date: "Spring 2024"
