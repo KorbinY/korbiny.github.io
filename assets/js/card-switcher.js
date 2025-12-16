@@ -6,7 +6,6 @@ function initPaperCardHover() {
     let leaveTimer;
 
     card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
-    card.style.transformOrigin = "right center"; // horizontal right, vertical center
     card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
     card.style.backgroundColor = "";
 
@@ -16,8 +15,13 @@ function initPaperCardHover() {
         leaveTimer = null;
       }
 
+      const rect = card.getBoundingClientRect();
+      const scale = 1.2;
+      const dx = rect.width * (scale - 1);
+
       hoverTimer = setTimeout(function() {
-        card.style.transform = "scale(1.2)"; // keep vertical center, right aligned
+        card.style.transition = "transform 0.1s ease, box-shadow 0.1s ease, z-index 0.1s ease, background-color 0.1s ease";
+        card.style.transform = `translateX(-${dx}px) scale(${scale}) translateY(0)`;
         card.style.zIndex = 1000;
         card.style.boxShadow = "0 20px 40px rgba(0,0,0,0.2)";
         card.style.backgroundColor = "rgba(211, 211, 211, 0.9)";
@@ -33,13 +37,12 @@ function initPaperCardHover() {
 
       leaveTimer = setTimeout(function() {
         card.style.transition = "transform 0.1s ease, box-shadow 0.1s ease, z-index 0.1s ease, background-color 0.1s ease";
-        card.style.transform = "scale(1)";
+        card.style.transform = "translateX(0) scale(1) translateY(0)";
         card.style.zIndex = "";
         card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
         card.style.backgroundColor = "";
         leaveTimer = null;
 
-        // restore transition to normal for next hover
         setTimeout(() => {
           card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
         }, 100);
