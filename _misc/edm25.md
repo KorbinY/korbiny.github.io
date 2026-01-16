@@ -11,5 +11,5 @@ authors:
 group: "Presentation"
 cover: /assets/images/covers/genai-edu-tutorial.png
 links:
-  Link: "{{ '/tutorials/EDM2025/' | relative_url }}"
+  Link: /tutorials/EDM2025/
 ---

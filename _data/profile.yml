@@ -24,18 +24,14 @@ linkedin: korbiny
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. student (from 2022) in Computer Science at Michigan State University, 
-    advised by Dr. Hui Liu and Dr. Jiliang Tang. My research interests lie in 
+    I am a Ph.D. student (from 2022) in Computer Science at Michigan State University. My research interests lie in 
     <b>Large Language Models (LLMs)</b>, <b>Computational Social Science</b>, and <b>AI for Education</b>, with a focus on developing reasoning methods and evaluating LLMs in real-world social and educational contexts.
   </p>
   <p>
-    Before starting my Ph.D., I earned an M.S. in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
+    Before starting my Ph.D. journey, I earned an M.S. in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
   </p>
   <p>
-    I have published several first-author papers and actively serve as a reviewer for leading AI/ML conferences and journals. 
-  </p>
-  <p>
-    You can find my <a href="/cv" class="btn btn-sm btn-secondary-deep align-baseline"><i class="fa-solid fa-id-card"></i><span class="cv-text">&nbsp;CV&nbsp;</span></a><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px; height:1px; opacity:0; vertical-align:middle;"> here.
+    Please find my <a href="/cv" class="btn btn-sm btn-secondary-deep align-baseline"><i class="fa-solid fa-id-card"></i><span class="cv-text">&nbsp;CV&nbsp;</span></a><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px; height:1px; opacity:0; vertical-align:middle;"> here.
   </p>
 
 
@@ -51,7 +47,7 @@ education:
   nlink: https://en.wikipedia.org/wiki/Michigan_State_University
   logo: /assets/images/badges/michigan-state-logo-png-transparent2.png
   logo_size: 35px
-  position: Ph.D. 
+  position: Ph.D. in Computer Science
   dept: Department of Computer Science and Engineering
   dlink: https://engineering.msu.edu/about/departments/cse
   date: 2022 – present
