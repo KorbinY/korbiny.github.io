@@ -6,7 +6,7 @@ positions:
 # - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
 #   logo_size: 35px
   - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Student, Computer Science, Michigan State University</i>"
-  - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'>Data Science and Engineering Lab</a></i>"
+  # - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'>Data Science and Engineering Lab</a></i>"
 
 
 email: "kqyang@msu.edu"
@@ -50,8 +50,9 @@ education:
 - name: Michigan State University
   logo: /assets/images/badges/michigan-state-logo-png-transparent2.png
   logo_size: 35px
-  position: Ph.D. Candidate
+  position: Ph.D. 
   dept: Department of Computer Science and Engineering
+  dlink: https://engineering.msu.edu/about/departments/cse
   date: 2022 – present
 
 - name: Fudan University
@@ -59,13 +60,15 @@ education:
   logo_size: 35px
   position: Master of Applied Statistics
   dept: School of Data Science
+  dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96701/page.psp
   date: 2019 – 2021
 
 - name: Fudan University
   logo: /assets/images/badges/ssdpp-fudan-logo.png
   logo_size: 35px
   position: Bachelor of Sociology
-  dept: Department of Sociology
+  dept: School of Social Development and Public Policy
+  dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96700/page.psp
   date: 2015 – 2019
 
 
