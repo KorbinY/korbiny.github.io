@@ -48,6 +48,7 @@ portrait_forward2: https://www.imdb.com/title/tt0054130/
 
 education:
 - name: Michigan State University
+  nlink: https://en.wikipedia.org/wiki/Michigan_State_University
   logo: /assets/images/badges/michigan-state-logo-png-transparent2.png
   logo_size: 35px
   position: Ph.D. 
@@ -56,6 +57,7 @@ education:
   date: 2022 – present
 
 - name: Fudan University
+  nlink: https://en.wikipedia.org/wiki/Fudan_University
   logo: /assets/images/badges/sds-fudan-logo.png
   logo_size: 35px
   position: Master of Applied Statistics
@@ -64,6 +66,7 @@ education:
   date: 2019 – 2021
 
 - name: Fudan University
+  nlink: https://en.wikipedia.org/wiki/Fudan_University
   logo: /assets/images/badges/ssdpp-fudan-logo.png
   logo_size: 35px
   position: Bachelor of Sociology
