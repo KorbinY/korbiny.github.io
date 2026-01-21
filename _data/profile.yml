@@ -24,14 +24,19 @@ linkedin: korbiny
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. student (from 2022) in Computer Science at Michigan State University. My research interests lie in 
-    <b>Large Language Models (LLMs)</b>, <b>Computational Social Science</b>, and <b>AI for Education</b>, with a focus on developing reasoning methods and evaluating LLMs in real-world social and educational contexts.
+    I am a Ph.D. student in Computer Science at Michigan State University (since 2022). 
+    My research interests include <b>Large Language Models (LLMs)</b>, 
+    <b>Computational Social Science</b>, and <b>AI for Education</b>, 
+    with a particular focus on developing reasoning methods and evaluating LLMs in real-world social and educational settings. 
+    Prior to my Ph.D., I earned an M.S. in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
   </p>
   <p>
-    Before starting my Ph.D. journey, I earned an M.S. in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
+    I will be on the job market in Spring 2027 and am actively seeking industry positions, 
+    particularly in areas related to social computing, dialogue systems, and user modeling. 
+    Please feel free to reach out via any of the contact methods listed below.
   </p>
   <p>
-    Please find my <a href="/cv" class="btn btn-sm btn-secondary-deep align-baseline"><i class="fa-solid fa-id-card"></i><span class="cv-text">&nbsp;CV&nbsp;</span></a><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px; height:1px; opacity:0; vertical-align:middle;"> here.
+    Here you can find my <a href="/cv" class="btn btn-sm btn-secondary-deep align-baseline"><i class="fa-solid fa-id-card"></i><span class="cv-text">&nbsp;CV&nbsp;</span></a><img src="/assets/images/empty_300x200.png" alt="CV" style="width:1px; height:1px; opacity:0; vertical-align:middle;">.
   </p>
 
 
