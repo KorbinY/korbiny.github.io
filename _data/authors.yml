@@ -2,11 +2,29 @@
   bold: true
   url: https://scholar.google.com/citations?user=qXs3XoQAAAAJ
 
+"Ahreum Han":
+  url: https://scholar.google.com/citations?user=kHQ_UzMAAAAJ
+  
+"Haitao Mao":
+  url: https://scholar.google.com/citations?user=3GmlKM4AAAAJ
+
+"Hamid Karimian":
+  url: https://scholar.google.com/citations?user=eYH7Yb8AAAAJ
+
+"Hanbing Wang":
+  url: https://scholar.google.com/citations?user=sDcW434AAAAJ
+
 "Hang Li":
   url: https://scholar.google.com/citations?user=25Vx5UIAAAAJ
 
-"Yucheng Chu":
-  url: https://scholar.google.com/citations?user=0DuJ1BgAAAAJ
+"Haoyu Han":
+  url: https://scholar.google.com/citations?user=X8Y3Bk4AAAAJ
+
+"Harry Shomer":
+  url: https://scholar.google.com/citations?user=_6eE2vsAAAAJ
+
+"Hongzhi Wen":
+  url: https://scholar.google.com/citations?user=9QoHiOoAAAAJ
 
 "Hui Liu":
   url: https://scholar.google.com/citations?user=EuzF_zsAAAAJ
@@ -14,47 +32,26 @@
 "Jiliang Tang":
   url: https://scholar.google.com/citations?user=WtzKMWAAAAAJ
 
-"Yasemin Copur-Gencturk":
-  url: https://scholar.google.com/citations?user=TNpGaXkAAAAJ
+"Jingxian Li":
+  url: https://scholar.google.com/citations?user=zrzC5FoAAAAJ
 
-"Tai-Quan Peng":
-  url: https://scholar.google.com/citations?user=iF4HlRQAAAAJ
-
-"Haoyu Han":
-  url: https://scholar.google.com/citations?user=X8Y3Bk4AAAAJ
-
-"Wei Jin":
-  url: https://scholar.google.com/citations?user=eWow24EAAAAJ
-
-"Hanbing Wang":
-  url: https://scholar.google.com/citations?user=sDcW434AAAAJ
-
-"Haitao Mao":
-  url: https://scholar.google.com/citations?user=3GmlKM4AAAAJ
+"Joseph Krajcik":
+  url: https://scholar.google.com/citations?user=aueAyPcAAAAJ
 
 "Juanhui Li":
   url: https://scholar.google.com/citations?user=5J0dd-sAAAAJ
 
-"Zhikai Chen":
-  url: https://scholar.google.com/citations?user=6hUny38AAAAJ
+"Mi Tian":
+  url: https://dblp.org/pid/264/9623.html
 
-"Hongzhi Wen":
-  url: https://scholar.google.com/citations?user=9QoHiOoAAAAJ
-
-"Ahreum Han":
-  url: https://scholar.google.com/citations?user=kHQ_UzMAAAAJ
+"Namsoo Shin":
+  url: https://scholar.google.com/citations?user=FO5FPUQAAAAJ
   
-"Taylor Darwin":
-  url: https://scholar.google.com/citations?user=osYy0ngAAAAJ
+"Peng He":
+  url: https://scholar.google.com/citations?user=zqwZWyQAAAAJ
 
-"Jingxian Li":
-  url: https://scholar.google.com/citations?user=zrzC5FoAAAAJ
-
-"Harry Shomer":
-  url: https://scholar.google.com/citations?user=_6eE2vsAAAAJ
-
-"Yuping Lin":
-  url: https://scholar.google.com/citations?user=liHGqfYAAAAJ
+"Qingsong Wen":
+  url: https://scholar.google.com/citations?user=vjPJvwYAAAAJ
 
 "Ruth Heo":
   url: https://scholar.google.com/citations?user=Hm0uCHUAAAAJ
@@ -62,35 +59,45 @@
 "Sanguk Lee":
   url: https://scholar.google.com/citations?user=FVMBdAgAAAAJ
 
-"Peng He":
-  url: https://scholar.google.com/citations?user=zqwZWyQAAAAJ
+"Tai-Quan Peng":
+  url: https://scholar.google.com/citations?user=iF4HlRQAAAAJ
 
-"Yu Xue":
-  url: https://scholar.google.com/citations?user=Lc7_KN0AAAAJ
-
-"Tingting Li":
-  url: https://scholar.google.com/citations?user=rBEZ-lkAAAAJ
-
-"Joseph Krajcik":
-  url: https://scholar.google.com/citations?user=aueAyPcAAAAJ
-
-"Zitao Liu":
-  url: https://scholar.google.com/citations?user=rRTzNm0AAAAJ
+"Taylor Darwin":
+  url: https://scholar.google.com/citations?user=osYy0ngAAAAJ
 
 "Tianlong Xu":
   url: https://scholar.google.com/citations?user=IiROoxEAAAAJ
 
-"Qingsong Wen":
-  url: https://scholar.google.com/citations?user=vjPJvwYAAAAJ
+"Tingting Li":
+  url: https://scholar.google.com/citations?user=rBEZ-lkAAAAJ
+
+"Wei Jin":
+  url: https://scholar.google.com/citations?user=eWow24EAAAAJ
+
+"Xianxuan Long":
+  url: https://scholar.google.com/citations?user=ycxAJE8AAAAJ
 
 "Yanling Chen":
   url: https://aclanthology.org/people/yanling-chen
 
+"Yasemin Copur-Gencturk":
+  url: https://scholar.google.com/citations?user=TNpGaXkAAAAJ
+
 "Yichi Song":
   url: https://aclanthology.org/people/yichi-song
 
-"Mi Tian":
-  url: https://dblp.org/pid/264/9623.html
+"Yu Xue":
+  url: https://scholar.google.com/citations?user=Lc7_KN0AAAAJ
 
-"Hamid Karimian":
-  url: https://scholar.google.com/citations?user=eYH7Yb8AAAAJ
+"Yucheng Chu":
+  url: https://scholar.google.com/citations?user=0DuJ1BgAAAAJ
+
+"Yuping Lin":
+  url: https://scholar.google.com/citations?user=liHGqfYAAAAJ
+
+"Zhikai Chen":
+  url: https://scholar.google.com/citations?user=6hUny38AAAAJ
+
+"Zitao Liu":
+  url: https://scholar.google.com/citations?user=rRTzNm0AAAAJ
+
