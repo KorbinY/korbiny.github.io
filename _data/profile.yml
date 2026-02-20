@@ -31,7 +31,7 @@ short_bio: >-
   </p>
 
   <p>
-    Prior to my Ph.D., I earned an M.S. in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
+    Prior to my Ph.D., I obtained a Master’s degree in Applied Statistics (Data Science) and a B.A. in Sociology from Fudan University, China.
   </p>
 
   <p>
@@ -60,7 +60,7 @@ education:
   nlink: https://en.wikipedia.org/wiki/Michigan_State_University
   logo: /assets/images/badges/michigan-state-logo-png-transparent2.png
   logo_size: 35px
-  position: Ph.D. in Computer Science
+  position: Ph.D., Computer Science
   dept: Department of Computer Science and Engineering
   dlink: https://engineering.msu.edu/about/departments/cse
   date: 2022 – present
@@ -69,7 +69,7 @@ education:
   nlink: https://en.wikipedia.org/wiki/Fudan_University
   logo: /assets/images/badges/sds-fudan-logo.png
   logo_size: 35px
-  position: Master of Applied Statistics
+  position: Master, Applied Statistics
   dept: School of Data Science
   dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96701/page.psp
   date: 2019 – 2021
@@ -78,7 +78,7 @@ education:
   nlink: https://en.wikipedia.org/wiki/Fudan_University
   logo: /assets/images/badges/ssdpp-fudan-logo.png
   logo_size: 35px
-  position: Bachelor of Sociology
+  position: Bachelor of Arts, Sociology
   dept: School of Social Development and Public Policy
   dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96700/page.psp
   date: 2015 – 2019
