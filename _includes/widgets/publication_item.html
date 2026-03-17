@@ -14,14 +14,16 @@
             
             <p class="mt-0 mb-0 small">
                 {% capture pub_block %}
-                {{ item.pub_pre }}{% if item.pub_pre %} {% endif %}<i>{{ item.pub }}</i>{% if item.pub_post %} {{ item.pub_post }}{% endif %}
+                {{ item.pub_pre }}{% if item.pub_pre %} {% endif %}
+                {% if item.pub_link %}
+                <a href="{{ item.pub_link.url | default: item.pub_link }}" target="{{ item.pub_link.target | default: '_blank' }}"><i>{{ item.pub }}</i></a>
+                {% else %}
+                <i>{{ item.pub }}</i>
+                {% endif %}
+                {% if item.pub_post %} {{ item.pub_post }}{% endif %}
                 {% endcapture %}
                 
-                {% if item.pub_link %}
-                <a href="{{ item.pub_link.url | default: item.pub_link }}" target="{{ item.pub_link.target | default: '_blank' }}">{{ pub_block }}</a>
-                {% else %}
-                {{ pub_block }}
-                {% endif %}, {{ item.pub_date }} {{ item.pub_last }}
+                {{ pub_block }}, {{ item.pub_date }} {{ item.pub_last }}
                 <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
             </p>
 
