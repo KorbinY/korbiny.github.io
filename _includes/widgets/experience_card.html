@@ -20,7 +20,7 @@
                                     <div class="media-body"> 
                                         <div style="font-size: 18px;">
                                             {% if item.nlink %}
-                                                <a href="{{ item.nlink }}" target="_blank" rel="noopener noreferrer">
+                                                <a href="{{ item.nlink }}" target="_self" rel="noopener noreferrer">
                                                     {{ item.name }}
                                                 </a>
                                             {% else %}
@@ -30,7 +30,7 @@
 
                                         <div class="small" style="font-size: 16px;">
                                             {% if item.dlink %}
-                                                <a href="{{ item.dlink }}" target="_blank" rel="noopener noreferrer">
+                                                <a href="{{ item.dlink }}" target="_self" rel="noopener noreferrer">
                                                     {{ item.dept }}
                                                 </a>
                                             {% else %}
