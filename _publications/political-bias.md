@@ -1,8 +1,8 @@
 ---
 title: "Beyond Partisan Leaning: A Comparative Analysis of Political Bias in Large Language Models"
-date: 2024-12-01
-pub: "arXiv preprint arXiv:2412.16746"
-pub_date: 2024
+date: 2026-03-17
+pub: "Journal of Information Technology & Politics"
+pub_date: 2026
 authors:
   - Kaiqi Yang
   - Hang Li
@@ -11,8 +11,8 @@ authors:
   - Tai-Quan Peng
   - Hui Liu
 links:
-  Paper: https://arxiv.org/abs/2412.16746
-type: preprint
+  Paper: https://doi.org/10.1080/19331681.2026.2646990
+type: paper
 cover: /assets/images/covers/political-bias.png
 selected: false
 ---
