@@ -5,10 +5,10 @@ pub:
   - entity: "Journal of Information Technology & Politics"
     link: https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20
 pub_post: 
-  - prefix: "(by"
+  - prefix: "(by "
     entity: "Routledge"
     link: https://www.routledge.com/about-us
-  - prefix: 'on behalf of'
+  - prefix: 'on behalf of '
     entity: 'the American Political Science Association'
     suffix: ")"
     link: https://apsanet.org/about/about-apsa/

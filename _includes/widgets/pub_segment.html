@@ -9,8 +9,6 @@
 
       {% capture content %}
         {% if part.prefix %}{{ part.prefix }}{% endif %}
-        {% if part.prefix and part.entity %} {% endif %}
-
         {% if part.entity %}
           {% if part.link %}
             <a href="{{ part.link }}" target="_blank" rel="noopener noreferrer"
@@ -21,12 +19,10 @@
             {% if italic %}<i>{{ part.entity }}</i>{% else %}{{ part.entity }}{% endif %}
           {% endif %}
         {% endif %}
-
-        {% if part.suffix %} {{ part.suffix }}{% endif %}
+        {% if part.suffix %}{{ part.suffix }}{% endif %}
       {% endcapture %}
 
       {{ content | strip }}
-
     {%- endfor -%}
   {% else %}
     {{ seg }}
