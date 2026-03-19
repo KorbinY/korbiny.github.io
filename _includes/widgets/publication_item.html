@@ -1,6 +1,7 @@
 {% assign item = include.item %}
 
 {% assign paper_url = nil %}
+
 {% for link in item.links %}
   {% assign link_key_down = link[0] | downcase %}
   {% if link_key_down contains "paper" %}
@@ -12,6 +13,20 @@
     {% break %}
   {% endif %}
 {% endfor %}
+
+{% if paper_url == nil %}
+  {% for link in item.links %}
+    {% assign link_key_down = link[0] | downcase %}
+    {% if link_key_down contains "preprint" %}
+      {% if link[1].url %}
+        {% assign paper_url = link[1].url %}
+      {% else %}
+        {% assign paper_url = link[1] %}
+      {% endif %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 
 {% capture title_content %}
