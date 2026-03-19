@@ -1,6 +1,7 @@
 {% assign item = include.item %}
 
 {% assign paper_url = nil %}
+{% assign link_color = item.link_color %}
 
 {% for link in item.links %}
   {% assign link_key_down = link[0] | downcase %}
@@ -58,7 +59,9 @@
                 {% capture pub_block %}
                 {{ item.pub_pre }}{% if item.pub_pre %} {% endif %}
                 {% if item.pub_link %}
-                <a href="{{ item.pub_link.url | default: item.pub_link }}" target="{{ item.pub_link.target | default: '_blank' }}"><i>{{ item.pub }}</i></a>
+                <a href="{{ item.pub_link.url | default: item.pub_link }}" 
+                    target="{{ item.pub_link.target | default: '_blank' }}"
+                    {% if link_color %}style="color: {{ link_color }};"{% endif %}>
                 {% else %}
                 <i>{{ item.pub }}</i>
                 {% endif %}
@@ -74,9 +77,11 @@
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
                 {% if link[1].url %}
-                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}"
+                    {% if link_color %}style="color: {{ link_color }};"{% endif %}>[{{ link[0] }}]</a>
                 {% else %}
-                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                <a target="_blank" href="{{ link[1] }}"
+                    {% if link_color %}style="color: {{ link_color }};"{% endif %}>[{{ link[0] }}]</a>
                 {% endif %}
                 {% endfor %}
             </p>
@@ -98,9 +103,11 @@
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                     {% for link in item.links %}
                     {% if link[1].url %}
-                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}"
+                        {% if link_color %}style="color: {{ link_color }};"{% endif %}>
                     {% else %}
-                    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                    <a target="_blank" href="{{ link[1] }}"
+                        {% if link_color %}style="color: {{ link_color }};"{% endif %}>[{{ link[0] }}]</a>
                     {% endif %}
                     {% endfor %}
                 </p>
