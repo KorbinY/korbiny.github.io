@@ -12,6 +12,7 @@ authors:
   - Hui Liu
 links:
   Paper: https://arxiv.org/abs/2402.12620
+  Code: https://github.com/KorbinY/LLMSocialPredictor
 cover: /assets/images/covers/llm-social-predictors.png
 selected: false
 ---
