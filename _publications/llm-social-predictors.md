@@ -2,7 +2,7 @@
 title: "Are Large Language Models (LLMs) Good Social Predictors?"
 date: 2024-11-12
 pub: "Conference on Empirical Methods in Natural Language Processing (EMNLP)"
-pub_date: 2024
+year: 2024
 authors:
   - Kaiqi Yang
   - Hang Li

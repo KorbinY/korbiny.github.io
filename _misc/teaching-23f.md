@@ -2,7 +2,7 @@
 title: "CSE 440 Introduction to Artificial Intelligence (23 Fall)"
 date: 2023-09-10
 pub: "Undergrad, CSE, MSU; "
-pub_date: "Fall 2023"
+year: "Fall 2023"
 authors: 
   - Hui Liu
   - Kaiqi Yang

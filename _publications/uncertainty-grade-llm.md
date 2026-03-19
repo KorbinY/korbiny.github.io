@@ -2,7 +2,7 @@
 title: "How Uncertain Is the Grade? A Benchmark of Uncertainty Metrics for LLM-Based Automatic Assessment"
 date: 2026-02-17
 pub: "arXiv preprint arXiv:2602.16039"
-pub_date: 2026
+year: 2026
 authors:
   - Kaiqi Yang*
   - Hang Li*

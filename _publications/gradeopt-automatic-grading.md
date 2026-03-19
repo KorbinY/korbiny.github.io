@@ -2,7 +2,7 @@
 title: "A LLM-Powered Automatic Grading Framework with Human-Level Guidelines Optimization"
 date: 2024-10-01
 pub: "arXiv preprint arXiv:2410.02165"
-pub_date: 2024
+year: 2024
 authors:
   - Yucheng Chu
   - Hang Li

@@ -4,7 +4,7 @@ date: 2026-03-17
 pub: "Journal of Information Technology & Politics"
 pub_post: "(published by Routledge, on behalf of the American Political Science Association)"
 pub_link: "https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20"
-pub_date: 2026
+year: 2026
 authors:
   - Tai-Quan Peng
   - Kaiqi Yang

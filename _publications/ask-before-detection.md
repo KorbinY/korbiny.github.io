@@ -2,7 +2,7 @@
 title: "Ask-Before-Detection: Identifying and Mitigating Conformity Bias in LLM-Powered Error Detector for Math Word Problem Solutions"
 date: 2025-07-27
 pub: "Annual Meeting of the Association for Computational Linguistics (ACL)"
-pub_date: 2025
+year: 2025
 authors:
   - Hang Li
   - Tianlong Xu

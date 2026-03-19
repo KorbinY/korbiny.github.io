@@ -2,7 +2,7 @@
 title: "Optimizing In-Context Demonstrations for LLM-based Automated Grading"
 date: 2026-03-01
 pub: "arXiv preprint arXiv:2603.00465"
-pub_date: 2026
+year: 2026
 authors:
   - Yucheng Chu
   - Hang Li

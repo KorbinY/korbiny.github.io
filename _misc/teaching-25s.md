@@ -2,7 +2,7 @@
 title: "CSE 482 Big Data Analysis (25 Spring)"
 date: 2025-01-10
 pub: "Undergrad, CSE, MSU; "
-pub_date: "Spring 2025"
+year: "Spring 2025"
 authors: 
   - Hui Liu
   - Hamid Karimian
