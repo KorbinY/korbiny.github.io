@@ -10,7 +10,8 @@ authors:
   - Yasemin Copur-Gencturk
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2504.05239
+  Paper: https://ieeexplore.ieee.org/document/11346771
+  Preprint: https://arxiv.org/abs/2504.05239
 cover: /assets/images/covers/grading-human-in-loop.png
 selected: false
 ---

@@ -11,7 +11,8 @@ authors:
   - Mi Tian
   - Hui Liu
 links:
-  Paper: https://arxiv.org/abs/2510.08615
+  Paper: https://ieeexplore.ieee.org/document/11346566/
+  Preprint: https://arxiv.org/abs/2510.08615
 cover: /assets/images/covers/iterative-llm-distracting.png
 selected: false
 ---
