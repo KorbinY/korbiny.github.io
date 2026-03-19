@@ -13,8 +13,8 @@ authors:
   - Qingsong Wen
   - Hui Liu
 links:
-  Preprint: https://aclanthology.org/2025.acl-long.80/
-  Paper: https://arxiv.org/abs/2412.16838
+  Paper: https://aclanthology.org/2025.acl-long.80/
+  Preprint: https://arxiv.org/abs/2412.16838
 cover: /assets/images/covers/ask-before-detection.png
 selected: false
 ---
