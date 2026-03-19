@@ -14,7 +14,6 @@ authors:
 links:
   Paper: https://educationaldatamining.org/EDM2025/proceedings/2025.EDM.long-papers.80/index.html
   Preprint: https://arxiv.org/abs/2410.02165
-type: preprint
 cover: /assets/images/covers/gradeopt-automatic-grading.png
 selected: false
 ---
