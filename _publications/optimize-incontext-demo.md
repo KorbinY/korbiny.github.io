@@ -12,7 +12,7 @@ authors:
   - Joseph Krajcik
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2603.00465
+  Preprint: https://arxiv.org/abs/2603.00465
 type: preprint
 cover: /assets/images/covers/optimize-incontext-demo.png
 selected: false

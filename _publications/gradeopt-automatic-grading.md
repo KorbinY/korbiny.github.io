@@ -12,7 +12,7 @@ authors:
   - Yasemin Copur-Gencturk
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2410.02165
+  Preprint: https://arxiv.org/abs/2410.02165
 type: preprint
 cover: /assets/images/covers/gradeopt-automatic-grading.png
 selected: false

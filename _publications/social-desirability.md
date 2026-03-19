@@ -10,7 +10,7 @@ authors:
   - Ruth Heo
   - Hui Liu
 links:
-  Paper: https://arxiv.org/abs/2410.15442
+  Preprint: https://arxiv.org/abs/2410.15442
 type: preprint
 cover: /assets/images/covers/social-desirability.png
 selected: false

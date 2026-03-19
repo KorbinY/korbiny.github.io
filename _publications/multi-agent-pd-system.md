@@ -12,7 +12,7 @@ authors:
   - Jiliang Tang
   - Hui Liu
 links:
-  Paper: https://arxiv.org/abs/2507.05292
+  Preprint: https://arxiv.org/abs/2507.05292
 type: preprint
 cover: /assets/images/covers/multi-agent-pd-system.png
 selected: false

@@ -17,7 +17,7 @@ authors:
   - Hui Liu
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2602.16039
+  Preprint: https://arxiv.org/abs/2602.16039
 type: preprint
 cover: /assets/images/covers/uncertainty-grade-llm.png
 selected: false

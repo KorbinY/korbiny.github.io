@@ -12,7 +12,7 @@ authors:
   - Namsoo Shin
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2603.00451
+  Preprint: https://arxiv.org/abs/2603.00451
 type: preprint
 cover: /assets/images/covers/confusion-rubric-optimize.png
 selected: false

@@ -10,7 +10,7 @@ authors:
   - Hui Liu
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2509.22480
+  Preprint: https://arxiv.org/abs/2509.22480
 type: preprint
 cover: /assets/images/covers/solution-divergence.png
 selected: false

@@ -14,7 +14,7 @@ authors:
   - Joseph Krajcik
   - Jiliang Tang
 links:
-  Paper: https://arxiv.org/abs/2504.05276
+  Preprint: https://arxiv.org/abs/2504.05276
 type: preprint
 cover: /assets/images/covers/enhancing-short-answer-rag.png
 selected: false
