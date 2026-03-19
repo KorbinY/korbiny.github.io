@@ -1,0 +1,28 @@
+{% assign items = include.items %}
+{% assign years = items | map: "pub_date" | compact | uniq | sort | reverse %}
+
+<div class="publication-group">
+    <h6 class="border-bottom border-gray px-3 py-2 mb-0 bg-light">{{ include.group_title }}</h6>
+
+    {% for year in years %}
+        {% assign year_items = items | where: "pub_date", year %}
+        {% assign year_items_title_sorted = year_items | sort: "title" %}
+        {% assign dated_items = year_items_title_sorted | where_exp: "item", "item.date != nil and item.date != ''" %}
+        {% assign dated_items = dated_items | sort: "date" | reverse %}
+        {% assign undated_items = year_items_title_sorted | where_exp: "item", "item.date == nil or item.date == ''" %}
+        {% assign sorted_year_items = dated_items | concat: undated_items %}
+
+        <div class="px-3 py-2 border-bottom border-gray small font-weight-bold text-muted bg-white">
+            {{ year }}
+        </div>
+
+        {% assign is_last_year = forloop.last %}
+        {% for item in sorted_year_items %}
+            {% assign hide_bottom_border = false %}
+            {% if is_last_year and forloop.last %}
+                {% assign hide_bottom_border = true %}
+            {% endif %}
+            {% include widgets/publication_entry.html item=item hide_bottom_border=hide_bottom_border %}
+        {% endfor %}
+    {% endfor %}
+</div>
