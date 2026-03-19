@@ -1,0 +1,19 @@
+
+{% assign item = include.item %}
+{% assign link_color = include.link_color %}
+
+{% if item.pub_pre %}{{ item.pub_pre }} {% endif %}
+
+{% if item.pub_link %}
+  {% assign pub_val = item.pub_link %}
+  {% assign pub_url = pub_val.url | default: pub_val %}
+  {% assign pub_target = pub_val.target | default: '_blank' %}
+  <a href="{{ pub_url }}" target="{{ pub_target }}" rel="noopener noreferrer"
+     {% if link_color %}style="color: {{ link_color }};"{% endif %}>
+    <i>{{ item.pub }}</i>
+  </a>
+{% else %}
+  <i>{{ item.pub }}</i>
+{% endif %}
+
+{% if item.pub_post %} {{ item.pub_post }}{% endif %}
