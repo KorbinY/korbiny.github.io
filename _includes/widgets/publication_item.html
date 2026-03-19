@@ -1,35 +1,20 @@
 {% assign item = include.item %}
 
-
-{% assign paper_url = nil %}
-{% for link in item.links %}
-    {% assign link_name = link[0] | downcase %}
-    {% if link_name == "paper" %}
-        {% if link[1].url %}
-            {% assign paper_url = link[1].url %}
-        {% else %}
-            {% assign paper_url = link[1] %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
-
-{% capture pub_block %}{{ item.pub_pre }}{% if item.pub_pre %} {% endif %}{% if item.pub_link %}<a href="{{ item.pub_link.url | default: item.pub_link }}" target="{{ item.pub_link.target | default: '_blank' }}"><i>{{ item.pub }}</i></a>{% else %}<i>{{ item.pub }}</i>{% endif %}{% if item.pub_post %} {{ item.pub_post }}{% endif %}{% endcapture %}
-
-
-<h5 class="mt-0 mb-1 font-weight-normal">
-    {% if paper_url %}
-        <a href="{{ paper_url }}" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-style: dashed;">
-            {{ item.title }}
-        </a>
-    {% else %}
-        {{ item.title }}
-    {% endif %}
-</h5>
-
+<h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
 
 <p class="mt-0 mb-0 small">
-    {{ pub_block }}, {{ item.pub_date }} {{ item.pub_last }}
+    {% capture pub_block %}
+    {{ item.pub_pre }}{% if item.pub_pre %} {% endif %}
+    {% if item.pub_link %}
+    <a href="{{ item.pub_link.url | default: item.pub_link }}" target="{{ item.pub_link.target | default: '_blank' }}"><i>{{ item.pub }}</i></a>
+    {% else %}
+    <i>{{ item.pub }}</i>
+    {% endif %}
+    {% if item.pub_post %} {{ item.pub_post }}{% endif %}
+    {% endcapture %}
+    
+    {{ pub_block }}, {{ item.year }} {{ item.pub_last }}
     <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
 </p>
 
@@ -37,10 +22,10 @@
 
 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
     {% for link in item.links %}
-        {% if link[1].url %}
-        <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
-        {% else %}
-        <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
-        {% endif %}
+    {% if link[1].url %}
+    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+    {% else %}
+    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+    {% endif %}
     {% endfor %}
 </p>
