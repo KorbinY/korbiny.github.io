@@ -1,7 +1,8 @@
 ---
 title: "Exploring Social Desirability Response Bias in Large Language Models: Evidence from GPT-4 Simulations"
 date: 2024-10-02
-pub: "arXiv preprint arXiv:2410.15442"
+pub: 
+  - entity: "arXiv preprint arXiv:2410.15442"
 year: 2024
 authors:
   - Sanguk Lee*

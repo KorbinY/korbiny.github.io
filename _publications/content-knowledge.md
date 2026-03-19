@@ -1,7 +1,8 @@
 ---
 title: "Content Knowledge Identification with Multi-Agent Large Language Models (LLMs)"
 date: 2024-07-08
-pub: "International Conference on Artificial Intelligence in Education (AIED)"
+pub: 
+  - entity: "International Conference on Artificial Intelligence in Education (AIED)"
 year: 2024
 authors:
   - Kaiqi Yang

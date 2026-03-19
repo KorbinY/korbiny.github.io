@@ -1,7 +1,8 @@
 ---
 title: "A LLM-Driven Multi-Agent Systems for Professional Development of Mathematics Teachers"
 date: 2025-07-01
-pub: "arXiv preprint arXiv:2507.05292"
+pub: 
+  - entity: "arXiv preprint arXiv:2507.05292"
 year: 2025
 authors:
   - Kaiqi Yang*

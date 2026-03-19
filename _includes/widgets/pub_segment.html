@@ -1,0 +1,34 @@
+{% assign seg = include.segment %}
+{% assign link_color = include.link_color %}
+{% assign italic = include.italic | default: false %}
+
+{% if seg %}
+  {% if seg.first %}
+    {%- for part in seg -%}
+      {% if forloop.first %}{% else %}, {% endif %}
+
+      {% capture content %}
+        {% if part.prefix %}{{ part.prefix }}{% endif %}
+        {% if part.prefix and part.entity %} {% endif %}
+        {% if part.entity %}
+          {% if italic %}<i>{{ part.entity }}</i>{% else %}{{ part.entity }}{% endif %}
+        {% endif %}
+        {% if part.suffix %} {{ part.suffix }}{% endif %}
+      {% endcapture %}
+
+      {% assign content = content | strip %}
+
+      {% if part.link %}
+        <a href="{{ part.link }}" target="_blank" rel="noopener noreferrer"
+           {% if link_color %}style="color: {{ link_color }};"{% endif %}>
+          {{ content }}
+        </a>
+      {% else %}
+        {{ content }}
+      {% endif %}
+
+    {%- endfor -%}
+  {% else %}
+    {{ seg }}
+  {% endif %}
+{% endif %}

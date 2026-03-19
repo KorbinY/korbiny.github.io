@@ -1,7 +1,8 @@
 ---
 title: "Confusion-Aware Rubric Optimization for LLM-based Automated Grading"
 date: 2026-02-28
-pub: "arXiv preprint arXiv:2603.00451"
+pub: 
+  - entity: "arXiv preprint arXiv:2603.00451"
 year: 2026
 authors:
   - Yucheng Chu

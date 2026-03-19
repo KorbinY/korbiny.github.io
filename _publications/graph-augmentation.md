@@ -1,7 +1,8 @@
 ---
 title: "Spectral-Aware Augmentation for Enhanced Graph Representation Learning"
 date: 2024-10-21
-pub: "ACM International Conference on Information and Knowledge Management (CIKM)"
+pub: 
+  - entity: "ACM International Conference on Information and Knowledge Management (CIKM)"
 year: 2024
 cover: /assets/images/covers/graph-augmentation.png
 authors:

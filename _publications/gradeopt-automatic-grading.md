@@ -1,7 +1,8 @@
 ---
 title: "A LLM-Powered Automatic Grading Framework with Human-Level Guidelines Optimization"
 date: 2025-07-20
-pub: "The 18th International Conference on Educational Data Mining (EDM)"
+pub: 
+  - entity: "The 18th International Conference on Educational Data Mining (EDM)"
 year: 2025
 authors:
   - Yucheng Chu

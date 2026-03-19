@@ -1,7 +1,8 @@
 ---
 title: "Exploring Solution Divergence and Its Effect on Large Language Model Problem Solving"
 date: 2025-09-01
-pub: "arXiv preprint arXiv:2509.22480"
+pub: 
+  - entity: "arXiv preprint arXiv:2509.22480"
 year: 2025
 authors:
   - Hang Li

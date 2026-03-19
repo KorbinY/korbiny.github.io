@@ -1,8 +1,7 @@
-
 {% assign item = include.item %}
 {% assign link_color = include.link_color %}
 
-{% if item.pub_pre %}{{ item.pub_pre }} {% endif %}
+{% include widgets/pub_segment.html segment=item.pub_pre link_color=link_color %}{% if item.pub_pre %} {% endif %}
 
 {% if item.pub_link %}
   {% assign pub_val = item.pub_link %}
@@ -10,10 +9,10 @@
   {% assign pub_target = pub_val.target | default: '_blank' %}
   <a href="{{ pub_url }}" target="{{ pub_target }}" rel="noopener noreferrer"
      {% if link_color %}style="color: {{ link_color }};"{% endif %}>
-    <i>{{ item.pub }}</i>
+    {% include widgets/pub_segment.html segment=item.pub italic=true %}
   </a>
 {% else %}
-  <i>{{ item.pub }}</i>
+  {% include widgets/pub_segment.html segment=item.pub italic=true %}
 {% endif %}
 
-{% if item.pub_post %} {{ item.pub_post }}{% endif %}
+{% if item.pub_post %} {% include widgets/pub_segment.html segment=item.pub_post link_color=link_color %}{% endif %}

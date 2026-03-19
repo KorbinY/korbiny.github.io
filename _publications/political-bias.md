@@ -1,9 +1,16 @@
 ---
 title: "Beyond Partisan Leaning: A Comparative Analysis of Political Bias in Large Language Models"
 date: 2026-03-17
-pub: "Journal of Information Technology & Politics"
-pub_post: '<i>(published by Routledge, on behalf of the American Political Science Association)</i>'
-pub_link: "https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20"
+pub: 
+  - entity: "Journal of Information Technology & Politics"
+  - link: "https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20"
+pub_post: 
+  - prefix: 'by'
+    entity: 'Routledge'
+    link: https://www.routledge.com/about-us
+  - prefix: 'on behalf of'
+    entity: 'the American Political Science Association'
+    link: https://apsanet.org/about/about-apsa/
 year: 2026
 authors:
   - Tai-Quan Peng
