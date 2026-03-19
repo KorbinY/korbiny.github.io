@@ -3,7 +3,7 @@ title: "Beyond Partisan Leaning: A Comparative Analysis of Political Bias in Lar
 date: 2026-03-17
 pub: 
   - entity: "Journal of Information Technology & Politics"
-  - link: https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20
+    link: https://www.tandfonline.com/action/aboutThisJournal?journalCode=witp20
 pub_post: 
   - prefix: "(by"
     entity: "Routledge"
