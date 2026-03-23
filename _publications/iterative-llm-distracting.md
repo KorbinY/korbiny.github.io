@@ -3,6 +3,7 @@ title: "Iterative LLM-Based Generation and Refinement of Distracting Conditions 
 date: 2025-09-14
 pub: 
   - entity: "IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)"
+    link: https://2025.tale-conference.org/
 year: 2025
 authors:
   - Kaiqi Yang

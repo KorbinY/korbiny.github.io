@@ -2,7 +2,8 @@
 title: "Bringing Generative Artificial Intelligence (GenAI) to Education"
 date: 2025-07-23
 pub: 
-  - entity: "Tutorial in the Educational Data Mining Conference (EDM)"
+  - entity: "Tutorial in the 18th Educational Data Mining Conference (EDM)"
+    link: https://educationaldatamining.org/edm2025/
 year: 2025
 authors:
   - Hang Li

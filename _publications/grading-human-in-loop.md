@@ -3,6 +3,7 @@ title: "LLM-based Automated Grading with Human-in-the-Loop"
 date: 2025-09-14
 pub: 
   - entity: "IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)"
+    link: https://2025.tale-conference.org/
 year: 2025
 authors:
   - Hang Li*

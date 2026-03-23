@@ -3,6 +3,7 @@ title: "Ask-Before-Detection: Identifying and Mitigating Conformity Bias in LLM-
 date: 2025-07-27
 pub: 
   - entity: "Annual Meeting of the Association for Computational Linguistics (ACL)"
+    link: https://aclanthology.org/
 year: 2025
 authors:
   - Hang Li
