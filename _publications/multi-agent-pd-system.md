@@ -1,6 +1,6 @@
 ---
 title: "A LLM-Driven Multi-Agent Systems for Professional Development of Mathematics Teachers"
-date: 2026-07-01
+date: 2026-06-30
 pub: 
   - entity: "International Conference on Artificial Intelligence in Education (AIED)"
     link: https://www.aied-conference.org/2026
