@@ -4,6 +4,7 @@
 {% assign links = item.links | default: empty %}
 {% assign paper_url = nil %}
 {% assign preprint_url = nil %}
+{% assign showing_year = nil %}
 
 {% for link in links %}
   {% assign key = link[0] | downcase %}
@@ -15,6 +16,14 @@
     {% assign preprint_url = val %}
   {% endif %}
 {% endfor %}
+
+{%- if item.pub and item.pub.first and item.pub.first.year -%}
+  {% assign showing_year = item.pub.first.year %}
+{%- elsif item.year -%}
+  {% assign showing_year = item.year %}
+{%- else -%}
+  {% assign showing_year = 'now' | date: "%Y" %}
+{%- endif -%}
 
 {% assign paper_url = paper_url | default: preprint_url %}
 
@@ -46,7 +55,7 @@
                 </p>
 
                 <p class="mt-0 mb-0 small">
-                    {% include widgets/pub_block.html item=item link_color=link_color %}, {{ item.year }} {{ item.pub_last }}
+                    {% include widgets/pub_block.html item=item link_color=link_color %}, {{ showing_year }} {{ item.pub_last }}
                     <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
                 </p>
 
@@ -81,7 +90,7 @@
                 </p>
 
                 <p class="mt-0 mb-0 small">
-                    {% include widgets/pub_block.html item=item link_color=link_color %}, {{ item.year }} {{ item.pub_last }}
+                    {% include widgets/pub_block.html item=item link_color=link_color %}, {{ showing_year }} {{ item.pub_last }}
                     <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
                 </p>
 

@@ -4,6 +4,7 @@ date: 2023-10-20
 pub: 
   - entity: "ACM International Conference on Information and Knowledge Management (CIKM)"
     link: https://cikm2024.org/
+    year: 2024
 year: 2023
 cover: /assets/images/covers/graph-augmentation.png
 authors:
