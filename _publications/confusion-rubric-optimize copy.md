@@ -3,6 +3,7 @@ title: "Confusion-Aware Rubric Optimization for LLM-based Automated Grading"
 date: 2026-06-29
 pub: 
   - entity: "The 19th International Conference on Educational Data Mining (EDM)"
+    link: https://educationaldatamining.org/edm2026/
 year: 2026
 authors:
   - Yucheng Chu
