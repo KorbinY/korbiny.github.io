@@ -5,14 +5,14 @@
 {% if seg %}
   {% if seg.first %}
     {%- for part in seg -%}
-      {%- unless forloop.first -%}, {%- endunless -%}
+      {%- unless forloop.first -%}, {% endunless -%}
 
       {%- if part.prefix -%}{{ part.prefix }}{%- endif -%}
 
       {%- if part.entity -%}
         {%- if part.link -%}
           <a href="{{ part.link }}" target="_blank" rel="noopener noreferrer"
-             {%- if link_color %} style="color: {{ link_color }};"{% endif -%}>
+             {% if link_color %}style="color: {{ link_color }};"{% endif %}>
             {%- if italic -%}<i>{{ part.entity }}</i>{%- else -%}{{ part.entity }}{%- endif -%}
           </a>
         {%- else -%}
