@@ -11,7 +11,6 @@ authors:
   - Yucheng Chu
   - Ahreum Han
   - Yasemin Copur-Gencturk
-  - Jiliang Tang
   - Hui Liu
 links:
   Preprint: https://arxiv.org/abs/2507.05292
