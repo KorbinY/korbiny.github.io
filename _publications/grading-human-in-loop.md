@@ -14,6 +14,6 @@ authors:
 links:
   Paper: https://ieeexplore.ieee.org/document/11346771
   Preprint: https://arxiv.org/abs/2504.05239
-cover: /assets/images/covers/grading-human-in-loop.png
+cover: /assets/images/covers/grading-human-in-loop.jpg
 selected: false
 ---

@@ -28,6 +28,6 @@ links:
 link_color: "#2E7D32"
 # semantic_scholar_id: "fe0f0d571592e35dd5da122cd9fe77ccea8df329"
 type: paper
-cover: /assets/images/covers/political-bias.png
+cover: /assets/images/covers/political-bias.jpg
 selected: true
 ---

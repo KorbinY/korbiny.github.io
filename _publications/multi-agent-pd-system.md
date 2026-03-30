@@ -16,6 +16,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2507.05292
 type: paper
-cover: /assets/images/covers/multi-agent-pd-system.png
+cover: /assets/images/covers/multi-agent-pd-system.jpg
 selected: false
 ---

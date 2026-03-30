@@ -16,6 +16,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2603.00451
 type: paper
-cover: /assets/images/covers/confusion-rubric-optimize.png
+cover: /assets/images/covers/confusion-rubric-optimize.jpg
 selected: false
 ---

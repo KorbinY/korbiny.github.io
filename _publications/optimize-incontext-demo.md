@@ -16,6 +16,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2603.00465
 type: paper
-cover: /assets/images/covers/optimize-incontext-demo.png
+cover: /assets/images/covers/optimize-incontext-demo.jpg
 selected: false
 ---

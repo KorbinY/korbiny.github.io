@@ -13,6 +13,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2509.22480
 type: preprint
-cover: /assets/images/covers/solution-divergence.png
+cover: /assets/images/covers/solution-divergence.jpg
 selected: false
 ---

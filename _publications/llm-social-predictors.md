@@ -16,6 +16,6 @@ links:
   Paper: https://aclanthology.org/2024.findings-emnlp.153/
   Preprint: https://arxiv.org/abs/2402.12620
   Code: https://github.com/KorbinY/LLMSocialPredictor
-cover: /assets/images/covers/llm-social-predictors.png
+cover: /assets/images/covers/llm-social-predictors.jpg
 selected: false
 ---

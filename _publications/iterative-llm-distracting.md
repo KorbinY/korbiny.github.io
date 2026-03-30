@@ -15,6 +15,6 @@ authors:
 links:
   Paper: https://ieeexplore.ieee.org/document/11346566/
   Preprint: https://arxiv.org/abs/2510.08615
-cover: /assets/images/covers/iterative-llm-distracting.png
+cover: /assets/images/covers/iterative-llm-distracting.jpg
 selected: false
 ---

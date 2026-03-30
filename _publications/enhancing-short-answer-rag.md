@@ -17,6 +17,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2504.05276
 type: preprint
-cover: /assets/images/covers/enhancing-short-answer-rag.png
+cover: /assets/images/covers/enhancing-short-answer-rag.jpg
 selected: false
 ---

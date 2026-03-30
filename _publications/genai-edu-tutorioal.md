@@ -13,6 +13,6 @@ authors:
 links:
   Paper: https://educationaldatamining.org/edm2025/proceedings/2025.EDM.workshop-tutorial-abstracts.250/
   Tutorial: /tutorials/EDM2025/
-cover: /assets/images/covers/genai-edu-tutorial.png
+cover: /assets/images/covers/genai-edu-tutorial.jpg
 selected: false
 ---

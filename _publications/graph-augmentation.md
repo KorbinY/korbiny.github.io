@@ -6,7 +6,7 @@ pub:
     link: https://cikm2024.org/
     year: 2024
 year: 2023
-cover: /assets/images/covers/graph-augmentation.png
+cover: /assets/images/covers/graph-augmentation.jpg
 authors:
   - Kaiqi Yang
   - Haoyu Han
