@@ -5,24 +5,23 @@
 {% if seg %}
   {% if seg.first %}
     {%- for part in seg -%}
-      {% if forloop.first %}{% else %}, {% endif %}
+      {%- if forloop.first -%}{%- else -%}, {%- endif -%}
 
-      {% capture content %}
-        {% if part.prefix %}{{ part.prefix }}{% endif %}
-        {% if part.entity %}
-          {% if part.link %}
+      {%- capture content -%}
+        {%- if part.prefix -%}{{ part.prefix }}{%- endif -%}
+        {%- if part.entity -%}
+          {%- if part.link -%}
             <a href="{{ part.link }}" target="_blank" rel="noopener noreferrer"
-               {% if link_color %}style="color: {{ link_color }};"{% endif %}>
-              {% if italic %}<i>{{ part.entity }}</i>{% else %}{{ part.entity }}{% endif %}
+               {%- if link_color %} style="color: {{ link_color }};"{% endif -%}>
+              {%- if italic -%}<i>{{ part.entity }}</i>{%- else -%}{{ part.entity }}{%- endif -%}
             </a>
-          {% else %}
-            {% if italic %}<i>{{ part.entity }}</i>{% else %}{{ part.entity }}{% endif %}
-          {% endif %}
-        {% endif %}
-        {% if part.suffix %}{{part.suffix }}{% endif %}
-      {% endcapture %}
+          {%- else -%}
+            {%- if italic -%}<i>{{ part.entity }}</i>{%- else -%}{{ part.entity }}{%- endif -%}
+          {%- endif -%}
+        {%- endif -%}{%- if part.suffix -%}{{ part.suffix }}{%- endif -%}
+      {%- endcapture -%}
 
-      {{ content | strip }}
+      {{- content | strip -}}
     {%- endfor -%}
   {% else %}
     {{ seg }}
