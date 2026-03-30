@@ -19,5 +19,5 @@ links:
   Paper: https://link.springer.com/chapter/10.1007/978-3-031-64299-9_23
   Preprint: https://arxiv.org/abs/2404.07960
 cover: /assets/images/covers/content-knowledge.png
-selected: false
+selected: true
 ---
