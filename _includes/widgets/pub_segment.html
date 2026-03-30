@@ -19,7 +19,7 @@
             {% if italic %}<i>{{ part.entity }}</i>{% else %}{{ part.entity }}{% endif %}
           {% endif %}
         {% endif %}
-        {% if part.suffix %}{{ part.suffix }}{% endif %}
+        {% if part.suffix %}{{part.suffix }}{% endif %}
       {% endcapture %}
 
       {{ content | strip }}
