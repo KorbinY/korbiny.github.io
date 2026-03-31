@@ -3,7 +3,7 @@ title: "From Flat to Structural: Enhancing Automated Short Answer Grading with G
 date: 2026-06-29
 pub: 
   - entity: "The 19th International Conference on Educational Data Mining (EDM)"
-  - link: https://educationaldatamining.org/edm2026/
+    link: https://educationaldatamining.org/edm2026/
 year: 2026
 authors:
   - Yucheng Chu
