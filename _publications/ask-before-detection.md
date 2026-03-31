@@ -2,7 +2,7 @@
 title: "Ask-Before-Detection: Identifying and Mitigating Conformity Bias in LLM-Powered Error Detector for Math Word Problem Solutions"
 date: 2025-07-27
 pub: 
-  - entity: "Annual Meeting of the Association for Computational Linguistics (ACL)"
+  - entity: "The 63rd Annual Meeting of the Association for Computational Linguistics (ACL)"
     link: https://aclanthology.org/
 year: 2025
 authors:

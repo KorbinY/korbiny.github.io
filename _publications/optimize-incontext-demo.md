@@ -2,7 +2,7 @@
 title: "Optimizing In-Context Demonstrations for LLM-based Automated Grading"
 date: 2026-06-29
 pub: 
-  - entity: "International Conference on Artificial Intelligence in Education (AIED)"
+  - entity: "The 27th International Conference on Artificial Intelligence in Education (AIED)"
     link: https://www.aied-conference.org/2026
 year: 2026
 authors:
