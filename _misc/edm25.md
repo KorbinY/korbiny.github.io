@@ -9,7 +9,7 @@ authors:
   - Yucheng Chu
   - Jiliang Tang
 group: "Presentation"
-cover: /assets/images/covers/genai-edu-tutorial.png
+cover: /assets/images/covers/genai-edu-tutorial.jpg
 links:
   Link: /tutorials/EDM2025/
 ---

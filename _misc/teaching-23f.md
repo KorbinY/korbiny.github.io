@@ -8,7 +8,7 @@ authors:
   - Kaiqi Yang
   - Haitao Mao
 group: "Teaching"
-cover: /assets/images/covers/cse440-23.png
+cover: /assets/images/covers/cse440-23.jpg
 links:
   Link: "https://www.cse.msu.edu/~kqyang/cse440-23fall"
 ---

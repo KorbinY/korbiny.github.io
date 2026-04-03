@@ -9,7 +9,7 @@ authors:
   - Hanbing Wang
   - Gaya Kanagaraj
 group: "Teaching"
-cover: /assets/images/covers/cse440-24.png
+cover: /assets/images/covers/cse440-24.jpg
 links:
   Link: "https://www.cse.msu.edu/~kqyang/cse440-24fall"
 ---

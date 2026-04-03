@@ -9,7 +9,7 @@ authors:
   - Kaiqi Yang
   - Juanhui Li
 group: "Teaching"
-cover: /assets/images/covers/cse482-25.png
+cover: /assets/images/covers/cse482-25.jpg
 links:
   Link: "https://web.archive.org/web/20250228132356/https://cse.msu.edu/~cse482/"
 ---

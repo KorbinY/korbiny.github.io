@@ -9,7 +9,7 @@ authors:
   - Kaiqi Yang
   - Zhikai Chen
 group: "Teaching"
-cover: /assets/images/covers/cse482-24.png
+cover: /assets/images/covers/cse482-24.jpg
 links:
   Link: "https://www.cse.msu.edu/~kqyang/cse482-24spring.html"
 ---
