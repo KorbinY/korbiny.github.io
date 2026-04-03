@@ -11,7 +11,7 @@ authors:
   - Jingxian Li
   - Jiliang Tang
 group: "Presentation"
-cover: /assets/images/covers/content-knowledge.png
+cover: /assets/images/covers/content-knowledge.jpg
 links:
   Link: "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2182370&PHPSESSID=fkeq0djsknvb9b11v86pm4pqj6"
 ---
