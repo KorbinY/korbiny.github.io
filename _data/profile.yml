@@ -85,6 +85,12 @@ education:
 
 
 experience:
+- name: Bytedance Inc
+  logo: /assets/images/badges/bytedance-icon.png
+  logo_size: 35px
+  position: Research Scientist Intern
+  date: May. 2026 - Aug. 2026
+
 - name: Amazon Inc
   logo: /assets/images/badges/Amazon-Logo-Transparent-PNG.png
   logo_size: 35px
