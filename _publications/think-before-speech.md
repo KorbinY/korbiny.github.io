@@ -11,6 +11,7 @@ authors:
   - Hui Liu
 links:
   Preprint: https://arxiv.org/abs/2606.03137
+type: preprint
 cover: /assets/images/covers/think-before-speak.jpg
 selected: false
 ---
