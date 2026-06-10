@@ -18,6 +18,6 @@ authors:
 links:
   Preprint: https://arxiv.org/abs/2603.19276
 type: paper
-cover: /assets/images/covers/from_flat_to_structural.jpg
+cover: /assets/images/covers/from-flat-to-structural.jpg
 selected: false
 ---
