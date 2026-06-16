@@ -17,4 +17,3 @@ Gemfile.lock
 .gitignore
 
 legacy/
-.claude/
