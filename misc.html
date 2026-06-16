@@ -2,8 +2,6 @@
 layout: default
 title : Misc
 navbar_title: Misc
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-misc" data-offset="100"
 ---
 
 <div class="row">
@@ -48,3 +46,57 @@ body_attr: >-
     </div>
   </div>
 </div>
+
+<script>
+(function () {
+  var navLinks = document.querySelectorAll('#navbar-misc .nav-link');
+  var scrollEl = document.querySelector('.main-scroll');
+  if (!navLinks.length || !scrollEl) return;
+
+  var OFFSET = 20;
+  var clickScrolling = false;
+  var clickScrollTimer = null;
+
+  function setActive(link) {
+    navLinks.forEach(function (l) { l.classList.remove('active'); });
+    if (link) link.classList.add('active');
+  }
+
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      setActive(this);
+      clickScrolling = true;
+      clearTimeout(clickScrollTimer);
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        var top = target.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top + scrollEl.scrollTop - OFFSET;
+        scrollEl.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+      }
+      clickScrollTimer = setTimeout(function () { clickScrolling = false; }, 700);
+    });
+  });
+
+  function onScroll() {
+    if (clickScrolling) return;
+    var atBottom = scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 5;
+    if (atBottom) {
+      setActive(navLinks[navLinks.length - 1]);
+      return;
+    }
+    var containerTop = scrollEl.getBoundingClientRect().top;
+    var active = null;
+    navLinks.forEach(function (link) {
+      var target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        var fromTop = target.getBoundingClientRect().top - containerTop;
+        if (fromTop <= OFFSET) active = link;
+      }
+    });
+    setActive(active);
+  }
+
+  scrollEl.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
