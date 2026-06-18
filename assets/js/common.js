@@ -2,6 +2,7 @@
 $(function () {
     lazyLoadOptions = {
         scrollDirection: 'vertical',
+        appendScroll: $('.main-scroll'),
         effect: 'fadeIn',
         effectTime: 300,
         placeholder: "",
