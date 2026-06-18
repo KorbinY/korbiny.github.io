@@ -25,26 +25,35 @@
   let clustrmapsLoaded = false
   const geoWrapper = document.querySelector('.geo_wrapper')
   const geoContainer = document.querySelector('.geostat-container')
-  
+
   if (!geoWrapper || !geoContainer) return
-  
+
+  function positionContainer() {
+    const rect = geoWrapper.getBoundingClientRect()
+    geoContainer.style.left = (rect.left + rect.width / 2) + 'px'
+    geoContainer.style.bottom = (window.innerHeight - rect.top + 8) + 'px'
+  }
+
   function loadClustrMaps() {
     if (clustrmapsLoaded) return
     clustrmapsLoaded = true
 
     geoContainer.innerHTML = '<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=878787&w=200&t=tt&d=AOHGQSRze7SIRR2k6C3o8lBzJFx74yZo39cfH1cDX7g&co=e8e8e8&ct=00196b"></script>'
-    
+
     const scriptElement = geoContainer.querySelector('#clustrmaps')
     if (scriptElement) {
       const newScript = document.createElement('script')
       newScript.type = 'text/javascript'
       newScript.id = 'clustrmaps'
       newScript.src = scriptElement.src
-      
+
       geoContainer.removeChild(scriptElement)
       geoContainer.appendChild(newScript)
     }
   }
-  
-  geoWrapper.addEventListener('mouseenter', loadClustrMaps)
+
+  geoWrapper.addEventListener('mouseenter', function () {
+    positionContainer()
+    loadClustrMaps()
+  })
 })();
