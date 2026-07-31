@@ -58,7 +58,7 @@ education:
   position: Ph.D., Computer Science
   dept: Department of Computer Science and Engineering
   dlink: https://engineering.msu.edu/about/departments/cse/about
-  date: 2022 – present
+  date: 2022 - 2027 (expected)
 
 - name: Fudan University
   nlink: https://en.wikipedia.org/wiki/Fudan_University
@@ -67,7 +67,7 @@ education:
   position: Master, Applied Statistics
   dept: School of Data Science
   dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96701/page.htm
-  date: 2019 – 2021
+  date: 2019 - 2021
 
 - name: Fudan University
   nlink: https://en.wikipedia.org/wiki/Fudan_University
@@ -76,7 +76,7 @@ education:
   position: Bachelor of Arts, Sociology
   dept: School of Social Development and Public Policy
   dlink: https://www.fudan.edu.cn/en/2019/0514/c295a96700/page.htm
-  date: 2015 – 2019
+  date: 2015 - 2019
 
 
 experience:
@@ -96,14 +96,14 @@ experience:
   logo: /assets/images/badges/TAL.png
   logo_size: 35px
   position: Research Intern
-  date: Jun. 2024 – Aug. 2024
+  date: Jun. 2024 - Aug. 2024
 
 - name: The Hong Kong Polytechnic University
   logo: /assets/images/badges/hong-kong-polytechnic-university-logo.png
   logo_size: 35px
   position: Research Intern
   dept: Department of Computing
-  date: May. 2023 – Aug. 2023
+  date: May. 2023 - Aug. 2023
 
 
 awards:
