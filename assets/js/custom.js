@@ -4,6 +4,7 @@
     const citeblockBtn = citeblockCard.querySelector('.citeblock-copy')
     const citeblockToast = citeblockCard.querySelector('.citeblock-toast')
     const citeblockCode = citeblockCard.querySelector('pre>code')
+    if (!citeblockBtn || !citeblockToast || !citeblockCode) return
     if (!citeblockSupport) citeblockBtn.setAttribute('aria-disabled','true')
     citeblockBtn.addEventListener('click', async () => {
       const citeblockText = citeblockCode.innerText

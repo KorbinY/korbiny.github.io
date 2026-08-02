@@ -15,8 +15,10 @@ body {
 
 .main-scroll {
     flex: 1;
+    min-height: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior-y: contain;
 }
 
 h1[id], h2[id] {
@@ -80,6 +82,20 @@ h1, h2, h3, h4, h5, h6,
 .cover-image {
     width: 180px;
     max-height: 120px;
+}
+
+.paper-card-highlight {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(211, 211, 211, 0.45);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.portrait-img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
 }
 
 .abstract-body {

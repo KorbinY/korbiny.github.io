@@ -1,8 +1,9 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
-    lazyLoadOptions = {
+    var $scrollContainer = $('.main-scroll');
+    var lazyLoadOptions = {
         scrollDirection: 'vertical',
-        appendScroll: $('.main-scroll'),
+        appendScroll: $scrollContainer,
         effect: 'fadeIn',
         effectTime: 300,
         placeholder: "",
@@ -21,10 +22,16 @@ $(function () {
         }
     }
 
-    $('img.lazy, div.lazy:not(.always-load)').Lazy({visibleOnly: true, ...lazyLoadOptions});
-    $('div.lazy.always-load').Lazy({visibleOnly: false, ...lazyLoadOptions});
+    if (typeof $.fn.Lazy === 'function') {
+        $('img.lazy, div.lazy:not(.always-load)').Lazy({visibleOnly: true, ...lazyLoadOptions});
+        $('div.lazy.always-load').Lazy({visibleOnly: false, ...lazyLoadOptions});
+    }
 
-    $('[data-toggle="tooltip"]').tooltip()
+    if (typeof $.fn.tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+
+    if (typeof $.fn.masonry !== 'function') return;
 
     var $grid = $('.grid').masonry({
         "percentPosition": true,
@@ -32,9 +39,11 @@ $(function () {
         "columnWidth": ".grid-sizer"
     });
     // layout Masonry after each image loads
-    $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
-    });
+    if (typeof $.fn.imagesLoaded === 'function') {
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry('layout');
+        });
+    }
 
     $(".lazy").on("load", function () {
         $grid.masonry('layout');

@@ -70,6 +70,27 @@
     flex-wrap: nowrap;
 }
 
+@media (max-width: 575.98px) {
+  .footer-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .footer-item-right {
+    text-align: left !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
 
 /* map statistics block  */
 .geo_wrapper {

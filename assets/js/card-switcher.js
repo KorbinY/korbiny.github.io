@@ -1,27 +1,16 @@
 function initPaperCardHover() {
   var cards = document.querySelectorAll(".d-none.d-md-block .row.no-gutters");
+  var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!canHover || reduceMotion) return;
 
   cards.forEach(function(card) {
     let hoverTimer;
-    let leaveTimer;
-
-    card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
-    card.style.transformOrigin = "right center"; // right aligned, vertical center
-    card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-    card.style.backgroundColor = "";
 
     card.addEventListener("mouseenter", function() {
-      if (leaveTimer) {
-        clearTimeout(leaveTimer);
-        leaveTimer = null;
-      }
-
       hoverTimer = setTimeout(function() {
-        card.style.transition = "transform 0.1s ease, box-shadow 0.1s ease, z-index 0.1s ease, background-color 0.1s ease";
-        card.style.transform = "scale(1.2)"; 
-        card.style.zIndex = 1000;
-        card.style.boxShadow = "0 20px 40px rgba(0,0,0,0.2)";
-        card.style.backgroundColor = "rgba(211, 211, 211, 0.9)";
+        card.classList.add('paper-card-highlight');
         hoverTimer = null;
       }, 1000);
     });
@@ -32,18 +21,7 @@ function initPaperCardHover() {
         hoverTimer = null;
       }
 
-      leaveTimer = setTimeout(function() {
-        card.style.transition = "transform 0.1s ease, box-shadow 0.1s ease, z-index 0.1s ease, background-color 0.1s ease";
-        card.style.transform = "scale(1)";
-        card.style.zIndex = "";
-        card.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
-        card.style.backgroundColor = "";
-        leaveTimer = null;
-
-        setTimeout(() => {
-          card.style.transition = "transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease, background-color 0.3s ease";
-        }, 100);
-      }, 0);
+      card.classList.remove('paper-card-highlight');
     });
   });
 }

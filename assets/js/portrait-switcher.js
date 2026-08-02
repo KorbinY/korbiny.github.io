@@ -16,6 +16,7 @@ function initPortraitSwitchers() {
     if (!altSrc) return;
 
     var hoverTimer;
+    var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
     if (typeof $ !== "undefined" && typeof $(img).tooltip === "function") {
       $(img).tooltip({ trigger: 'hover' });
@@ -27,10 +28,14 @@ function initPortraitSwitchers() {
       link.removeAttribute("href");
     }
 
+    if (!canHover) return;
+
+    var altImage = new Image();
+    altImage.src = altSrc;
+
     container.addEventListener("mouseenter", function() {
       hoverTimer = setTimeout(function() {
         img.setAttribute("src", altSrc);
-        img.style.height = "250px";
 
         if (altCaption) {
           img.setAttribute("title", altCaption);
@@ -55,7 +60,6 @@ function initPortraitSwitchers() {
       clearTimeout(hoverTimer);
 
       img.setAttribute("src", originalSrc);
-      img.style.height = "200px";
 
       if (originalCaption) {
         img.setAttribute("title", originalCaption);
