@@ -2,7 +2,7 @@
 title: "Exploring Prompt Injection Attacks on LLM-Based Automatic Grading Systems"
 date: 2026-10-24
 pub: 
-  - entity: "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP),"
+  - entity: "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
   - link: https://aclanthology.org/
 year: 2026
 authors:
