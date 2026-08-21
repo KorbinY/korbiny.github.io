@@ -1,9 +1,10 @@
 ---
 title: "Exploring Solution Divergence and Its Effect on Large Language Model Problem Solving"
-date: 2025-09-01
+date: 2025-10-24
 pub: 
-  - entity: "arXiv preprint arXiv:2509.22480"
-year: 2025
+  - entity: "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP),"
+  - link: https://aclanthology.org/
+year: 2026
 authors:
   - Hang Li
   - Kaiqi Yang
@@ -12,7 +13,7 @@ authors:
   - Jiliang Tang
 links:
   Preprint: https://arxiv.org/abs/2509.22480
-type: preprint
+type: paper
 cover: /assets/images/covers/solution-divergence.jpg
 selected: false
 ---

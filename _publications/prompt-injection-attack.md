@@ -1,8 +1,9 @@
 ---
 title: "Exploring Prompt Injection Attacks on LLM-Based Automatic Grading Systems"
-date: 2026-06-03
+date: 2026-10-24
 pub: 
-  - entity: "arXiv preprint arXiv:2606.03090"
+  - entity: "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP),"
+  - link: https://aclanthology.org/
 year: 2026
 authors:
   - Hang Li*
@@ -16,7 +17,7 @@ authors:
   - Jiliang Tang
 links:
   Preprint: https://arxiv.org/abs/2606.03090
-type: preprint
+type: paper
 cover: /assets/images/covers/prompt-injection-attack.jpg
 selected: false
 ---
