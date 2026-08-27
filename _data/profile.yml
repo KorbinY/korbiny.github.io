@@ -5,7 +5,7 @@ navbar_name: "Korbin"
 positions:
 # - logo: /assets/images/badges/michigan-state-logo-png-transparent.png 
 #   logo_size: 35px
-  - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Student, Computer Science, Michigan State University</i>"
+  - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Ph.D. Candidate, Computer Science, Michigan State University</i>"
   # - name: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Graduate Research Assistant, <a href='https://dse.cse.msu.edu' target='_blank' rel='noopener noreferrer'>Data Science and Engineering Lab</a></i>"
 
 
@@ -24,8 +24,7 @@ linkedin: korbiny
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. student in Computer Science at Michigan State University,
-    with research interests in <strong>Large Language Models (LLMs)</strong>,
+    I am a Ph.D. candidate in Computer Science at Michigan State University,
     <strong>Computational Social Science</strong>, and <strong>AI for Education</strong>.
     Prior to my Ph.D., I received an M.S. in Applied Statistics and a B.A. in Sociology
     from Fudan University, China.
