@@ -5,5 +5,5 @@ year: "Spring 2024"
 group: "Teaching"
 cover: /assets/images/covers/cse482-24.jpg
 links:
-  Link: "https://www.cse.msu.edu/~kqyang/cse482-24spring.html"
+  Link: "https://web.archive.org/web/20241127183641/https://www.cse.msu.edu/~kqyang/cse482-24spring.html"
 ---

@@ -77,6 +77,12 @@ education:
 
 
 experience:
+- name: TikTok Inc
+  logo: /assets/images/badges/tiktok-logo.png
+  logo_size: 35px
+  position: Research Scientist Intern
+  date: Aug. 2026 - Present
+
 - name: Bytedance Inc
   logo: /assets/images/badges/bytedance-icon.png
   logo_size: 35px

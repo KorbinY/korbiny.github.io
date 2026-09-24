@@ -5,5 +5,5 @@ year: "Fall 2023"
 group: "Teaching"
 cover: /assets/images/covers/cse440-23.jpg
 links:
-  Link: "https://www.cse.msu.edu/~kqyang/cse440-23fall"
+  Link: "https://web.archive.org/web/20250226101000/https://www.cse.msu.edu/~kqyang/cse440-23fall"
 ---
