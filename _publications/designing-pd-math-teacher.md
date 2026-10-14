@@ -18,5 +18,5 @@ link_color: "#2E7D32"
 
 type: paper
 cover: /assets/images/covers/designing-pd-math-teacher.jpg
-selected: true
+selected: false
 ---
