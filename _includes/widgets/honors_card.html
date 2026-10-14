@@ -1,0 +1,21 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <div class="mx-2 my-1">
+                    <h5>Honors & Awards</h5>
+                    <ul class="mb-1">
+                        {% for item in site.data.profile.awards %}
+                        <li>
+                            <div class="d-flex">
+                                <div style="font-size: 18px;">{{ item.name }}</div>
+                                <div class="mt-auto ml-auto no-break" style="font-size: 14px;"><em>{{ item.date }}</em></div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
