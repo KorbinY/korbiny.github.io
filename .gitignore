@@ -17,3 +17,5 @@ Gemfile.lock
 .gitignore
 
 legacy/
+
+_cv_source/
