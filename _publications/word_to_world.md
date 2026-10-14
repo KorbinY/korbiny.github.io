@@ -21,5 +21,5 @@ links:
   Preprint: https://arxiv.org/abs/2610.15228
 type: preprint
 cover: /assets/images/covers/word_to_world.jpg
-selected: false
+selected: true
 ---
