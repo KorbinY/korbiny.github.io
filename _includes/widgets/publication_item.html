@@ -26,18 +26,25 @@
 {%- endif -%}
 
 {% assign paper_url = paper_url | default: preprint_url %}
+{% assign show_type_icon = include.show_type_icon | default: false %}
+
+{% if item.type == 'preprint' %}
+  {% assign type_icon = 'fa-regular fa-file-pen' %}
+{% else %}
+  {% assign type_icon = 'fa-regular fa-book-bookmark' %}
+{% endif %}
 
 {% capture title_content -%}
   {% if paper_url %}
     <a class="title-link" href="{{ paper_url }}" target="_blank" rel="noopener noreferrer">
-       {{ item.title }}
+       {% if show_type_icon %}<i class="{{ type_icon }}"></i> {% endif %}{{ item.title }}
     </a>
   {% else %}
-    {{ item.title }}
+    {% if show_type_icon %}<i class="{{ type_icon }}"></i> {% endif %}{{ item.title }}
   {% endif %}
 {%- endcapture %}
 
-<div class="d-none d-md-block">
+<div class="d-none d-md-block" data-publication-type="{% if item.type == 'preprint' %}preprint{% else %}published{% endif %}">
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             {%- if item.cover -%}
@@ -77,7 +84,7 @@
     </div>
 </div>
 
-<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
+<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}" data-publication-type="{% if item.type == 'preprint' %}preprint{% else %}published{% endif %}">
     <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}" style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>

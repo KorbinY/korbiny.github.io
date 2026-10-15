@@ -4,55 +4,44 @@ title : Publications
 navbar_title: Publications
 ---
 
+<style>
+  .publication-filter-hidden { display: none !important; }
+</style>
+
+{% assign publications_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
 <div class="row">
   <div class="col-12 col-lg-10">
-
-    <!-- ===== Publications Section ===== -->
     <h1 class="pt-4"><i class="fas fa-book"></i> Publications</h1>
-    {% assign pubs = site.publications | where_exp: "item", "item.type != 'preprint'" %}
-    {% assign pubs_by_year = pubs | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-    {% for year in pubs_by_year %}
-    <h2 class="pt-4" id="pub-year-{{ year.name }}">{{ year.name }}</h2>
-    <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-      {% for item in year.items %}
-        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-      {% endfor %}
-    </div>
+    {% for year in publications_by_year %}
+    <section data-publication-year="{{ year.name }}">
+      <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in year.items %}
+          {% include widgets/publication_item.html item=item show_type_icon=true hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    </section>
     {% endfor %}
 
-    <!-- ===== Preprints Section ===== -->
-    <h1 class="pt-4"><i class="fas fa-file-alt"></i> Preprints</h1>
-    {% assign preprints = site.publications | where: "type", "preprint" %}
-    {% assign preprints_by_year = preprints | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
-
-    {% for year in preprints_by_year %}
-    <h2 class="pt-4" id="preprint-year-{{ year.name }}">{{ year.name }}</h2>
-    <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-      {% for item in year.items %}
-        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-      {% endfor %}
-    </div>
-    {% endfor %}
-
-    <!-- =====Claim AI-generated Images ===== -->
     {% include ai_images_credit.html %}
   </div>
 
-  <!-- ===== Right-side year navigation ===== -->
   <div class="col-2 d-none d-lg-block">
     <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 16px">
+      <div class="dropdown mt-2 mb-1">
+        <button id="publication-filter-button" class="btn btn-link nav-link p-0 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-book"></i> Publications
+        </button>
+        <div class="dropdown-menu" aria-labelledby="publication-filter-button">
+          <a class="dropdown-item" href="#" data-publication-filter="published"><i class="fa-solid fa-book-bookmark"></i> Published</a>
+          <a class="dropdown-item" href="#" data-publication-filter="preprint"><i class="fa-solid fa-file-pen"></i> Preprints</a>
+        </div>
+      </div>
 
-      <!-- Publications years -->
-      <h6 class="mt-2"><i class="fas fa-book"></i> Publications</h6>
-      {% for year in pubs_by_year %}
-        <a class="nav-link d-block" href="#pub-year-{{ year.name }}">{{ year.name }}</a>
-      {% endfor %}
-
-      <!-- Preprints years -->
-      <h6 class="mt-4"><i class="fas fa-file-alt"></i> Preprints</h6>
-      {% for year in preprints_by_year %}
-        <a class="nav-link d-block" href="#preprint-year-{{ year.name }}">{{ year.name }}</a>
+      {% for year in publications_by_year %}
+        <a class="nav-link d-block" data-publication-year-link="{{ year.name }}" href="#year-{{ year.name }}">{{ year.name }}</a>
       {% endfor %}
     </div>
   </div>
@@ -60,22 +49,70 @@ navbar_title: Publications
 
 <script>
 (function () {
-  var navLinks = document.querySelectorAll('#navbar-year .nav-link');
   var scrollEl = document.querySelector('.main-scroll');
-  if (!navLinks.length || !scrollEl) return;
+  var publicationItems = Array.prototype.slice.call(document.querySelectorAll('[data-publication-type]'));
+  var yearSections = Array.prototype.slice.call(document.querySelectorAll('[data-publication-year]'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#navbar-year .nav-link[data-publication-year-link]'));
+  var filterLinks = Array.prototype.slice.call(document.querySelectorAll('[data-publication-filter]'));
+  var filterButton = document.getElementById('publication-filter-button');
+  if (!scrollEl) return;
 
   var OFFSET = 20;
   var clickScrolling = false;
   var clickScrollTimer = null;
 
+  function visibleLinks() {
+    return navLinks.filter(function (link) { return !link.classList.contains('publication-filter-hidden'); });
+  }
+
   function setActive(link) {
-    navLinks.forEach(function (l) { l.classList.remove('active'); });
+    navLinks.forEach(function (navLink) { navLink.classList.remove('active'); });
     if (link) link.classList.add('active');
   }
 
+  function updateYears() {
+    yearSections.forEach(function (section) {
+      var hasVisibleItem = Array.prototype.slice.call(section.querySelectorAll('[data-publication-type]')).some(function (item) {
+        return !item.classList.contains('publication-filter-hidden');
+      });
+      section.classList.toggle('publication-filter-hidden', !hasVisibleItem);
+      var year = section.getAttribute('data-publication-year');
+      var navLink = document.querySelector('[data-publication-year-link="' + year + '"]');
+      if (navLink) navLink.classList.toggle('publication-filter-hidden', !hasVisibleItem);
+    });
+  }
+
+  function applyFilter(filter) {
+    publicationItems.forEach(function (item) {
+      var shouldShow = filter === 'all' || item.getAttribute('data-publication-type') === filter;
+      item.classList.toggle('publication-filter-hidden', !shouldShow);
+    });
+    updateYears();
+
+    if (filter === 'published') {
+      filterButton.innerHTML = '<i class="fa-solid fa-book-bookmark"></i> Published';
+    } else if (filter === 'preprint') {
+      filterButton.innerHTML = '<i class="fa-solid fa-file-pen"></i> Preprints';
+    } else {
+      filterButton.innerHTML = '<i class="fas fa-book"></i> Publications';
+    }
+
+    var latestLink = visibleLinks()[0];
+    if (latestLink) {
+      setActive(latestLink);
+      var latestTarget = document.querySelector(latestLink.getAttribute('href'));
+      if (latestTarget) {
+        var latestTop = latestTarget.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top + scrollEl.scrollTop - OFFSET;
+        scrollEl.scrollTo({ top: Math.max(0, latestTop), behavior: 'smooth' });
+      }
+    } else {
+      setActive(null);
+    }
+  }
+
   navLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
       setActive(this);
       clickScrolling = true;
       clearTimeout(clickScrollTimer);
@@ -88,16 +125,25 @@ navbar_title: Publications
     });
   });
 
+  filterLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      applyFilter(this.getAttribute('data-publication-filter'));
+    });
+  });
+
   function onScroll() {
     if (clickScrolling) return;
+    var links = visibleLinks();
+    if (!links.length) return;
     var atBottom = scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 5;
     if (atBottom) {
-      setActive(navLinks[navLinks.length - 1]);
+      setActive(links[links.length - 1]);
       return;
     }
     var containerTop = scrollEl.getBoundingClientRect().top;
     var active = null;
-    navLinks.forEach(function (link) {
+    links.forEach(function (link) {
       var target = document.querySelector(link.getAttribute('href'));
       if (target) {
         var fromTop = target.getBoundingClientRect().top - containerTop;
@@ -108,6 +154,6 @@ navbar_title: Publications
   }
 
   scrollEl.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  applyFilter('all');
 })();
 </script>
