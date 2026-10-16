@@ -36,8 +36,8 @@ navbar_title: Publications
         </button>
         <div class="dropdown-menu" aria-labelledby="publication-filter-button">
           <a class="dropdown-item" href="#" data-publication-filter="all"><i class="fas fa-book"></i> Publications</a>
-          <a class="dropdown-item" href="#" data-publication-filter="published"><i class="fa-solid fa-book-bookmark"></i> Published</a>
-          <a class="dropdown-item" href="#" data-publication-filter="preprint"><i class="fa-solid fa-file-pen"></i> Preprints</a>
+          <a class="dropdown-item" href="#" data-publication-filter="published"><i class="fa-solid fa-newspaper"></i> Published</a>
+          <a class="dropdown-item" href="#" data-publication-filter="preprint"><i class="fa-solid fa-file-lines"></i> Preprints</a>
         </div>
       </div>
 
@@ -91,9 +91,9 @@ navbar_title: Publications
     updateYears();
 
     if (filter === 'published') {
-      filterButton.innerHTML = '<i class="fa-solid fa-book-bookmark"></i> Published';
+      filterButton.innerHTML = '<i class="fa-solid fa-newspaper"></i> Published';
     } else if (filter === 'preprint') {
-      filterButton.innerHTML = '<i class="fa-solid fa-file-pen"></i> Preprints';
+      filterButton.innerHTML = '<i class="fa-solid fa-file-lines"></i> Preprints';
     } else {
       filterButton.innerHTML = '<i class="fas fa-book"></i> Publications';
     }
