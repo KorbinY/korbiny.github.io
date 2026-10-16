@@ -5,8 +5,8 @@ pub:
   - entity: "arXiv preprint arXiv:2610.15228"
 year: 2026
 authors:
-  - Xinnan Dai*
   - Kaiqi Yang*
+  - Xinnan Dai*
   - Yaxin Li*
   - Cheng Luo
   - Wanli Li

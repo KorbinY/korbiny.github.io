@@ -5,8 +5,8 @@ pub:
   - entity: "arXiv preprint arXiv:2410.15442"
 year: 2024
 authors:
-  - Sanguk Lee*
   - Kaiqi Yang*
+  - Sanguk Lee*
   - Tai-Quan Peng
   - Ruth Heo
   - Hui Liu
