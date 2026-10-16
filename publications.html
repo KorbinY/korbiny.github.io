@@ -12,7 +12,7 @@ navbar_title: Publications
 
 <div class="row">
   <div class="col-12 col-lg-10">
-    <h1 class="pt-4"><i class="fas fa-book"></i> Publications</h1>
+    <h1 id="publication-page-title" class="pt-4"><i class="fas fa-book"></i> Publications</h1>
 
     {% for year in publications_by_year %}
     <section data-publication-year="{{ year.name }}">
@@ -56,6 +56,7 @@ navbar_title: Publications
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#navbar-year .nav-link[data-publication-year-link]'));
   var filterLinks = Array.prototype.slice.call(document.querySelectorAll('[data-publication-filter]'));
   var filterButton = document.getElementById('publication-filter-button');
+  var pageTitle = document.getElementById('publication-page-title');
   if (!scrollEl) return;
 
   var OFFSET = 20;
@@ -83,29 +84,31 @@ navbar_title: Publications
     });
   }
 
+  function updateFilterLabels(filter) {
+    var label;
+    if (filter === 'published') {
+      label = '<i class="fa-solid fa-newspaper"></i> Published';
+    } else if (filter === 'preprint') {
+      label = '<i class="fa-solid fa-file-lines"></i> Preprints';
+    } else {
+      label = '<i class="fas fa-book"></i> Publications';
+    }
+    filterButton.innerHTML = label;
+    pageTitle.innerHTML = label;
+  }
+
   function applyFilter(filter) {
     publicationItems.forEach(function (item) {
       var shouldShow = filter === 'all' || item.getAttribute('data-publication-type') === filter;
       item.classList.toggle('publication-filter-hidden', !shouldShow);
     });
     updateYears();
-
-    if (filter === 'published') {
-      filterButton.innerHTML = '<i class="fa-solid fa-newspaper"></i> Published';
-    } else if (filter === 'preprint') {
-      filterButton.innerHTML = '<i class="fa-solid fa-file-lines"></i> Preprints';
-    } else {
-      filterButton.innerHTML = '<i class="fas fa-book"></i> Publications';
-    }
+    updateFilterLabels(filter);
 
     var latestLink = visibleLinks()[0];
     if (latestLink) {
       setActive(latestLink);
-      var latestTarget = document.querySelector(latestLink.getAttribute('href'));
-      if (latestTarget) {
-        var latestTop = latestTarget.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top + scrollEl.scrollTop - OFFSET;
-        scrollEl.scrollTo({ top: Math.max(0, latestTop), behavior: 'smooth' });
-      }
+      scrollEl.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       setActive(null);
     }
@@ -117,8 +120,10 @@ navbar_title: Publications
       setActive(this);
       clickScrolling = true;
       clearTimeout(clickScrollTimer);
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
+      var target = this === visibleLinks()[0] ? pageTitle : document.querySelector(this.getAttribute('href'));
+      if (target === pageTitle) {
+        scrollEl.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (target) {
         var top = target.getBoundingClientRect().top - scrollEl.getBoundingClientRect().top + scrollEl.scrollTop - OFFSET;
         scrollEl.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
       }
@@ -137,6 +142,10 @@ navbar_title: Publications
     if (clickScrolling) return;
     var links = visibleLinks();
     if (!links.length) return;
+    if (scrollEl.scrollTop <= OFFSET) {
+      setActive(links[0]);
+      return;
+    }
     var atBottom = scrollEl.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 5;
     if (atBottom) {
       setActive(links[links.length - 1]);
