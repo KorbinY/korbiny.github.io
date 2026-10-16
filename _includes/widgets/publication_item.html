@@ -29,9 +29,9 @@
 {% assign show_type_icon = include.show_type_icon | default: false %}
 
 {% if item.type == 'preprint' %}
-  {% assign type_icon = 'fa-regular fa-pen-to-square' %}
+  {% assign type_icon = 'fa-regular fa-clipboard' %}
 {% else %}
-  {% assign type_icon = 'fa-regular fa-bookmark' %}
+  {% assign type_icon = 'fa-regular fa-newspaper' %}
 {% endif %}
 
 {% capture title_content -%}
